@@ -2,6 +2,7 @@
   "item.scalar_utils.butter": "Butter",
   "item.scalar_utils.citric_compound": "Citric Compound",
   "item.scalar_utils.cheese": "Cheese",
+  "item.scalar_utils.cheesecake": "Cheesecake",
   "item.scalar_utils.chicken_nugget": "Chicken Nugget",
   "item.scalar_utils.chocolate_milk": "Chocolate Milk",
   "item.scalar_utils.cooked_meat": "Cooked Meat",
@@ -39,6 +40,7 @@
   "item.scalar_utils.rice_seeds": "Rice Seeds",
   "item.scalar_utils.rice_slimeball": "Rice Slimeball",
   "item.scalar_utils.shulker_shellmet": "Shulker Shellmet",
+  "item.scalar_utils.strawberry_cheesecake": "Strawberry Cheesecake",
   "item.scalar_utils.stone_greatsword": "Stone Greatsword",
   "item.scalar_utils.strawberry": "Strawberry",
   "item.scalar_utils.strawberry_seeds": "Strawberry Seeds",
@@ -58,6 +60,7 @@
   "item.scalar_utils.voidstone_shovel": "Voidstone Shovel",
   "item.scalar_utils.voidstone_sword": "Voidstone Sword",
   "item.scalar_utils.wood_greatsword": "Wooden Greatsword",
+  "item.scalar_utils.wood_greatsword": "Yogurt",
 
   "block.scalar_utils.black_lotus": "Black Lotus",
   "block.scalar_utils.black_solid_block": "Black Solid Block",
