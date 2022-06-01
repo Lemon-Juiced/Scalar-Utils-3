@@ -106,6 +106,12 @@ public class ModItems {
     //Wands
     public static final RegistryObject<Item> BASIC_WAND = ITEMS.register("basic_wand", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
     public static final RegistryObject<Item> GILDED_IRON_WAND_CAP = ITEMS.register("gilded_iron_wand_cap", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
+    public static final RegistryObject<Item> FIRE_FOCUS = ITEMS.register("fire_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
+    public static final RegistryObject<Item> HARMING_FOCUS = ITEMS.register("harming_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
+    public static final RegistryObject<Item> HEALING_FOCUS = ITEMS.register("healing_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
+    public static final RegistryObject<Item> POISON_FOCUS = ITEMS.register("poison_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
+    public static final RegistryObject<Item> WITHER_FOCUS = ITEMS.register("wither_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
+
     /**
      * Registers Items to the Deferred Register of Items
      * @param eventBus The bus that contains the Item's information
