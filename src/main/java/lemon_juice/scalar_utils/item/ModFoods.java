@@ -21,5 +21,9 @@ public class ModFoods {
     public static final FoodProperties STRAWBERRY = (new FoodProperties.Builder()).fast().nutrition(1).saturationMod(0.2F).build();
     public static final FoodProperties STRAWBERRY_CHEESECAKE = (new FoodProperties.Builder()).nutrition(9).saturationMod(0.5F).build();
     public static final FoodProperties TOAST = (new FoodProperties.Builder()).nutrition(6).saturationMod(0.6F).build();
-    public static final FoodProperties YOGURT = (new FoodProperties.Builder()).fast().nutrition(2).saturationMod(0.1F).build();
+    public static final FoodProperties YOGURT = stew(2).build();
+
+    private static FoodProperties.Builder stew(int pNutrition) {
+        return (new FoodProperties.Builder()).nutrition(pNutrition).saturationMod(0.6F);
+    }
 }

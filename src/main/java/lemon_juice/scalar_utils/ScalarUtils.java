@@ -38,6 +38,7 @@ public class ScalarUtils
         //Crops
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.FLAX_PLANT.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RICE_PLANT.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.STRAWBERRY_PLANT.get(), RenderType.cutout());
 
         //Flowers
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLACK_LOTUS.get(), RenderType.cutout());
