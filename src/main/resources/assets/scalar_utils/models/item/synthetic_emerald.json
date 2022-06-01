@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "scalar_utils:item/cheese"
+    "layer0": "scalar_utils:item/synthetic_emerald"
   }
 }
