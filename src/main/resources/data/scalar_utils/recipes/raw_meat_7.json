@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#C"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:meat_grinder"
+    },
+    "C": {
+      "item": "minecraft:mutton"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:raw_meat",
+    "count": 2
+  }
+}

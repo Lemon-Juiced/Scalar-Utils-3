@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "scalar_utils:block/light_blue_solid_block"}
+  }
+}

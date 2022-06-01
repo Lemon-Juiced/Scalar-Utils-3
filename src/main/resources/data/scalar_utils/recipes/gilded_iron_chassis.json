@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "gcg",
+    "GGG",
+    "ggg"
+  ],
+  "key": {
+    "c": {
+      "item": "scalar_utils:crank"
+    },
+    "g": {
+      "item": "scalar_utils:gilded_iron_ingot"
+    },
+    "G": {
+      "item": "scalar_utils:gilded_iron_nugget"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:gilded_iron_chassis",
+    "count": 1
+  }
+}

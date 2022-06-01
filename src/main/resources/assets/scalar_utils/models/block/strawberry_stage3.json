@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "scalar_utils:block/strawberry_stage3"
+  }
+}

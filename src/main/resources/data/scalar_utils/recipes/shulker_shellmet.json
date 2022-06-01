@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:shulker_shell"
+    },
+    {
+      "item": "minecraft:iron_helmet"
+    }
+  ],
+  "result": {
+    "item": "scalar_utils:shulker_shellmet",
+    "count": 1
+  }
+}

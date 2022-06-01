@@ -1,0 +1,22 @@
+package lemon_juice.scalar_utils.item;
+
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.food.FoodProperties;
+
+public class ModFoods {
+    public static final FoodProperties BUTTER = (new FoodProperties.Builder()).nutrition(1).saturationMod(0.1F).build();
+    public static final FoodProperties CHEESE = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.2F).build();
+    public static final FoodProperties CHOCOLATE_MILK = (new FoodProperties.Builder()).nutrition(0).saturationMod(0).alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 1.0F).build();
+    public static final FoodProperties CHICKEN_NUGGET = (new FoodProperties.Builder()).fast().nutrition(2).saturationMod(0.3F).meat().build();
+    public static final FoodProperties COOKED_MEAT = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.8F).meat().build();
+    public static final FoodProperties GRILLED_CHEESE = (new FoodProperties.Builder()).nutrition(12).saturationMod(0.9F).build();
+    public static final FoodProperties GRILLED_MEAT_AND_CHEESE = (new FoodProperties.Builder()).nutrition(14).saturationMod(1.0F).build();
+    public static final FoodProperties HOT_COCOA = (new FoodProperties.Builder()).nutrition(0).saturationMod(0).alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 1.0F).effect(new MobEffectInstance(MobEffects.DIG_SPEED, 600, 0), 1.0F).build();
+    public static final FoodProperties RAW_CHICKEN_NUGGET = (new FoodProperties.Builder()).fast().nutrition(1).saturationMod(0.1F).effect(new MobEffectInstance(MobEffects.HUNGER, 600, 0), 0.3F).meat().build();
+    public static final FoodProperties RAW_MEAT = (new FoodProperties.Builder()).nutrition(1).saturationMod(0.4F).meat().build();
+    public static final FoodProperties RICE = (new FoodProperties.Builder()).fast().nutrition(1).saturationMod(0.2F).build();
+    public static final FoodProperties RICE_BREAD = (new FoodProperties.Builder()).nutrition(5).saturationMod(0.6F).build();
+    public static final FoodProperties STRAWBERRY = (new FoodProperties.Builder()).fast().nutrition(1).saturationMod(0.2F).build();
+    public static final FoodProperties TOAST = (new FoodProperties.Builder()).nutrition(6).saturationMod(0.6F).build();
+}

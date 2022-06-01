@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "scalar_utils:block/stripped_cherry_log",
+    "side": "scalar_utils:block/stripped_cherry_log"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#C"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:meat_grinder"
+    },
+    "C": {
+      "item": "minecraft:cooked_rabbit"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:cooked_meat",
+    "count": 5
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "item": "scalar_utils:pot"
+    }
+  ],
+  "result": {
+    "item": "scalar_utils:cheese"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "scalar_utils:black_solid_block",
+    "scalar_utils:blue_solid_block",
+    "scalar_utils:brown_solid_block",
+    "scalar_utils:cyan_solid_block",
+    "scalar_utils:gray_solid_block",
+    "scalar_utils:green_solid_block",
+    "scalar_utils:light_blue_solid_block",
+    "scalar_utils:light_gray_solid_block",
+    "scalar_utils:lime_solid_block",
+    "scalar_utils:magenta_solid_block",
+    "scalar_utils:orange_solid_block",
+    "scalar_utils:pink_solid_block",
+    "scalar_utils:purple_solid_block",
+    "scalar_utils:red_solid_block",
+    "scalar_utils:white_solid_block",
+    "scalar_utils:yellow_solid_block",
+    "scalar_utils:voidstone_block",
+    "scalar_utils:voidstone_ore"
+  ]
+}

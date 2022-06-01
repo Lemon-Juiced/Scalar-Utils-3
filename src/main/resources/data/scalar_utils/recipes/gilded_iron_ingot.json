@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:iron_ingot"
+  },
+  "addition": {
+    "item": "minecraft:gold_nugget"
+  },
+  "result": {
+    "item": "scalar_utils:gilded_iron_ingot"
+  }
+}

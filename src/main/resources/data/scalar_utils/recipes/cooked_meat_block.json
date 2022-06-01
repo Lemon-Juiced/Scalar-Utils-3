@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:cooked_meat"
+    }
+  },
+  "result": {
+    "item": "minecraft:cooked_meat_block"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "scalar_utils:raw_chicken_nugget"
+  },
+  "result": "scalar_utils:chicken_nugget",
+  "experience": 0.35,
+  "cookingtime": 100
+}

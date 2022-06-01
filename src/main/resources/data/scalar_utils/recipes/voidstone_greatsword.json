@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "scalar_utils:netherite_greatsword"
+  },
+  "addition": {
+    "item": "scalar_utils:voidstone_block"
+  },
+  "result": {
+    "item": "scalar_utils:voidstone_greatsword"
+  }
+}

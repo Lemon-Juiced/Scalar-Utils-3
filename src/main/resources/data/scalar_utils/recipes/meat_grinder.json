@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "LLL"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:gilded_iron_chassis"
+    },
+    "L": {
+      "item": "scalar_utils:lemon_quartz_blade"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:meat_grinder",
+    "count": 1
+  }
+}

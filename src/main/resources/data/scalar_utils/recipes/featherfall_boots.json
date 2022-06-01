@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#I#"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:golden_feather"
+    },
+    "I": {
+      "item": "minecraft:iron_boots"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:featherfall_boots",
+    "count": 1
+  }
+}

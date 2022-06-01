@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "entries": [
+    "scalar_utils:flax_seeds_from_grass",
+    "scalar_utils:rice_seeds_from_grass"
+  ]
+}
