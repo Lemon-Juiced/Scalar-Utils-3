@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalar_utils:vanilla_ice_cream"
+    },
+    {
+      "item": "scalar_utils:chocolate_ice_cream"
+    },
+    {
+      "item": "scalar_utils:strawberry_ice_cream"
+    }
+  ],
+  "result": {
+    "item": "scalar_utils:neopolitan_ice_cream",
+    "count": 3
+  }
+}

@@ -14,6 +14,7 @@ public class ModFoods {
     public static final FoodProperties GRILLED_CHEESE = (new FoodProperties.Builder()).nutrition(12).saturationMod(0.9F).build();
     public static final FoodProperties GRILLED_MEAT_AND_CHEESE = (new FoodProperties.Builder()).nutrition(14).saturationMod(1.0F).build();
     public static final FoodProperties HOT_COCOA = (new FoodProperties.Builder()).nutrition(0).saturationMod(0).alwaysEat().effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 1.0F).effect(new MobEffectInstance(MobEffects.DIG_SPEED, 600, 0), 1.0F).build();
+    public static final FoodProperties ICE_CREAM = stew(4).build();
     public static final FoodProperties RAW_CHICKEN_NUGGET = (new FoodProperties.Builder()).fast().nutrition(1).saturationMod(0.1F).effect(new MobEffectInstance(MobEffects.HUNGER, 600, 0), 0.3F).meat().build();
     public static final FoodProperties RAW_MEAT = (new FoodProperties.Builder()).nutrition(1).saturationMod(0.4F).meat().build();
     public static final FoodProperties RICE = (new FoodProperties.Builder()).fast().nutrition(1).saturationMod(0.2F).build();
