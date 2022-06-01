@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "scalar_utils:item/wood_greatsword"
+    "layer0": "scalar_utils:item/golden_greatsword"
   }
 }
