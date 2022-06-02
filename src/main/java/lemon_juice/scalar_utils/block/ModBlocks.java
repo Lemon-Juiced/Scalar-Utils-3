@@ -23,6 +23,29 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ScalarUtils.MOD_ID);
 
+    //Compact Blocks
+    public static final RegistryObject<Block> COOKED_MEAT_BLOCK = registerBlock("cooked_meat_block", () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> GILDED_IRON_BLOCK = registerBlock("gilded_iron_block", () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> RAW_MEAT_BLOCK = registerBlock("raw_meat_block", () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
+
+    //Crops
+    public static final RegistryObject<Block> FLAX_PLANT = registerBlockWithoutBlockItem("flax_plant", () -> new FlaxPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+    public static final RegistryObject<Block> RICE_PLANT = registerBlockWithoutBlockItem("rice_plant", () -> new RicePlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+    public static final RegistryObject<Block> STRAWBERRY_PLANT = registerBlockWithoutBlockItem("strawberry_plant", () -> new StrawberryPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+
+    //End Ores
+    public static final RegistryObject<Block> VOIDSTONE_BLOCK = registerBlock("voidstone_block", () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> VOIDSTONE_ORE = registerBlock("voidstone_ore", () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
+
+    //Flowers
+    public static final RegistryObject<Block> BLACK_LOTUS = registerBlock("black_lotus", () -> new FlowerBlock(MobEffects.GLOWING, 1, BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> POTTED_BLACK_LOTUS = registerBlockWithoutBlockItem("potted_black_lotus", () -> new FlowerPotBlock(null, ModBlocks.BLACK_LOTUS, BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()));
+
+    //Overworld Ores
+    public static final RegistryObject<Block> DEEPSLATE_FLUX_ORE = registerBlock("deepslate_flux_ore", () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> FLUX_BLOCK = registerBlock("flux_block", () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> FLUX_ORE = registerBlock("flux_ore", () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
+
     //Solid Blocks
     public static final RegistryObject<Block> BLACK_SOLID_BLOCK = registerBlock("black_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
     public static final RegistryObject<Block> BLUE_SOLID_BLOCK = registerBlock("blue_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
@@ -40,24 +63,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> RED_SOLID_BLOCK = registerBlock("red_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
     public static final RegistryObject<Block> WHITE_SOLID_BLOCK = registerBlock("white_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
     public static final RegistryObject<Block> YELLOW_SOLID_BLOCK = registerBlock("yellow_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
-
-    //Compact Blocks
-    public static final RegistryObject<Block> COOKED_MEAT_BLOCK = registerBlock("cooked_meat_block", () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
-    public static final RegistryObject<Block> GILDED_IRON_BLOCK = registerBlock("gilded_iron_block", () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
-    public static final RegistryObject<Block> RAW_MEAT_BLOCK = registerBlock("raw_meat_block", () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
-
-    //Crops
-    public static final RegistryObject<Block> FLAX_PLANT = registerBlockWithoutBlockItem("flax_plant", () -> new FlaxPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
-    public static final RegistryObject<Block> RICE_PLANT = registerBlockWithoutBlockItem("rice_plant", () -> new RicePlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
-    public static final RegistryObject<Block> STRAWBERRY_PLANT = registerBlockWithoutBlockItem("strawberry_plant", () -> new StrawberryPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
-
-    //Flowers
-    public static final RegistryObject<Block> BLACK_LOTUS = registerBlock("black_lotus", () -> new FlowerBlock(MobEffects.GLOWING, 1, BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()), ModCreativeModeTab.SCALAR_UTILS_TAB);
-    public static final RegistryObject<Block> POTTED_BLACK_LOTUS = registerBlockWithoutBlockItem("potted_black_lotus", () -> new FlowerPotBlock(null, ModBlocks.BLACK_LOTUS, BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()));
-
-    //End Ores
-    public static final RegistryObject<Block> VOIDSTONE_BLOCK = registerBlock("voidstone_block", () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
-    public static final RegistryObject<Block> VOIDSTONE_ORE = registerBlock("voidstone_ore", () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
 
     /**
      * Registers the Block as a Block

@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "scalar_utils:item/basic_wand"
+    "layer0": "scalar_utils:item/wand_of_harming"
   }
 }

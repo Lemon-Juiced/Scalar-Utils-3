@@ -3,6 +3,7 @@ package lemon_juice.scalar_utils.event;
 import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.event.loot.FlaxSeedsFromGrassAdditionModifier;
 import lemon_juice.scalar_utils.event.loot.RiceSeedsFromGrassAdditionModifier;
+import lemon_juice.scalar_utils.event.loot.StrawberrySeedsFromGrassAdditionModifier;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.event.RegistryEvent;
@@ -17,7 +18,8 @@ public class ModEventBusEvents {
     public static void registerModifierSerializers(@Nonnull final RegistryEvent.Register<GlobalLootModifierSerializer<?>> event) {
         event.getRegistry().registerAll(
                 new FlaxSeedsFromGrassAdditionModifier.Serializer().setRegistryName(new ResourceLocation(ScalarUtils.MOD_ID, "flax_seeds_from_grass")),
-                new RiceSeedsFromGrassAdditionModifier.Serializer().setRegistryName(new ResourceLocation(ScalarUtils.MOD_ID, "rice_seeds_from_grass"))
+                new RiceSeedsFromGrassAdditionModifier.Serializer().setRegistryName(new ResourceLocation(ScalarUtils.MOD_ID, "rice_seeds_from_grass")),
+                new StrawberrySeedsFromGrassAdditionModifier.Serializer().setRegistryName(new ResourceLocation(ScalarUtils.MOD_ID, "strawberry_seeds_from_grass"))
         );
     }
 

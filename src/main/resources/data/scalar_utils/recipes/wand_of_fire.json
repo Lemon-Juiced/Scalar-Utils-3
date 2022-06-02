@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalar_utils:basic_wand"
+    },
+    {
+      "item": "scalar_utils:fire_focus"
+    }
+  ],
+  "result": {
+    "item": "scalar_utils:wand_of_fire",
+    "count": 1
+  }
+}

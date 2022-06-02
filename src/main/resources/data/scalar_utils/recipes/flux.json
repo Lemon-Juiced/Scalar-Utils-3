@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalar_utils:flux_block"
+    }
+  ],
+  "result": {
+    "item": "scalar_utils:flux",
+    "count": 9
+  }
+}
