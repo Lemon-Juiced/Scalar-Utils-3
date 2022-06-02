@@ -4,6 +4,7 @@ import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.block.ModBlocks;
 import lemon_juice.scalar_utils.item.custom.*;
 import lemon_juice.scalar_utils.item.custom.wands.tier1.FireWandItem;
+import lemon_juice.scalar_utils.item.custom.wands.tier1.HarmingWandItem;
 import lemon_juice.scalar_utils.item.custom.wands.tier1.HealingWandItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
@@ -147,7 +148,7 @@ public class ModItems {
     public static final RegistryObject<Item> POISON_FOCUS = ITEMS.register("poison_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
     public static final RegistryObject<Item> WITHER_FOCUS = ITEMS.register("wither_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
     public static final RegistryObject<Item> WAND_OF_FIRE = ITEMS.register("wand_of_fire", () -> new FireWandItem(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB).stacksTo(1).durability(255)));
-    public static final RegistryObject<Item> WAND_OF_HARMING = ITEMS.register("wand_of_harming", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB).stacksTo(1).durability(255)));
+    public static final RegistryObject<Item> WAND_OF_HARMING = ITEMS.register("wand_of_harming", () -> new HarmingWandItem(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB).stacksTo(1).durability(255)));
     public static final RegistryObject<Item> WAND_OF_HEALING = ITEMS.register("wand_of_healing", () -> new HealingWandItem(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB).stacksTo(1).durability(255)));
     public static final RegistryObject<Item> WAND_OF_POISON = ITEMS.register("wand_of_poison", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB).stacksTo(1).durability(255)));
     public static final RegistryObject<Item> WAND_OF_WITHER = ITEMS.register("wand_of_wither", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB).stacksTo(1).durability(255)));
