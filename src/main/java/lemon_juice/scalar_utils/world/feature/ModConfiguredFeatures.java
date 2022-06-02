@@ -30,12 +30,12 @@ public class ModConfiguredFeatures {
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_MANA_CRYSTAL_ORE.get().defaultBlockState())
     );
 
-    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> MANA_CRYSTAL = FeatureUtils.register("mana_crystal", Feature.ORE, new OreConfiguration(OVERWORLD_MANA_CRYSTAL_ORES, 2));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> MANA_CRYSTAL = FeatureUtils.register("mana_crystal", Feature.ORE, new OreConfiguration(OVERWORLD_MANA_CRYSTAL_ORES, 10));
 
     //Voidstone Ore
     public static final List<OreConfiguration.TargetBlockState> END_VOIDSTONE_ORES = List.of(
             OreConfiguration.target(END_STONE, ModBlocks.VOIDSTONE_ORE.get().defaultBlockState())
     );
-    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> VOIDSTONE_ORE = FeatureUtils.register("voidstone_ore", Feature.ORE, new OreConfiguration(END_VOIDSTONE_ORES, 3));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> VOIDSTONE_ORE = FeatureUtils.register("voidstone_ore", Feature.ORE, new OreConfiguration(END_VOIDSTONE_ORES, 5));
 
 }
