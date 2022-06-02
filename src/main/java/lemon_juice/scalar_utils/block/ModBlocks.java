@@ -12,6 +12,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,6 +20,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
+import java.util.function.ToIntFunction;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ScalarUtils.MOD_ID);
@@ -42,9 +44,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_BLACK_LOTUS = registerBlockWithoutBlockItem("potted_black_lotus", () -> new FlowerPotBlock(null, ModBlocks.BLACK_LOTUS, BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()));
 
     //Overworld Ores
-    public static final RegistryObject<Block> DEEPSLATE_MANA_CRYSTAL_ORE = registerBlock("deepslate_mana_crystal_ore", () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> DEEPSLATE_MANA_CRYSTAL_ORE = registerBlock("deepslate_mana_crystal_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
     public static final RegistryObject<Block> MANA_CRYSTAL_BLOCK = registerBlock("mana_crystal_block", () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
-    public static final RegistryObject<Block> MANA_CRYSTAL_ORE = registerBlock("mana_crystal_ore", () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> MANA_CRYSTAL_ORE = registerBlock("mana_crystal_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
 
     //Solid Blocks
     public static final RegistryObject<Block> BLACK_SOLID_BLOCK = registerBlock("black_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
@@ -63,6 +65,24 @@ public class ModBlocks {
     public static final RegistryObject<Block> RED_SOLID_BLOCK = registerBlock("red_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
     public static final RegistryObject<Block> WHITE_SOLID_BLOCK = registerBlock("white_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
     public static final RegistryObject<Block> YELLOW_SOLID_BLOCK = registerBlock("yellow_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
+
+    /* Inverted Solid Blocks */
+    public static final RegistryObject<Block> INVERTED_BLACK_SOLID_BLOCK = registerBlock("inverted_black_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops().lightLevel((p_50872_) -> 15)), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> INVERTED_BLUE_SOLID_BLOCK = registerBlock("inverted_blue_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops().lightLevel((p_50872_) -> 15)), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> INVERTED_BROWN_SOLID_BLOCK = registerBlock("inverted_brown_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops().lightLevel((p_50872_) -> 15)), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> INVERTED_CYAN_SOLID_BLOCK = registerBlock("inverted_cyan_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops().lightLevel((p_50872_) -> 15)), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> INVERTED_GRAY_SOLID_BLOCK = registerBlock("inverted_gray_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops().lightLevel((p_50872_) -> 15)), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> INVERTED_GREEN_SOLID_BLOCK = registerBlock("inverted_green_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops().lightLevel((p_50872_) -> 15)), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> INVERTED_LIGHT_BLUE_SOLID_BLOCK = registerBlock("inverted_light_blue_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops().lightLevel((p_50872_) -> 15)), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> INVERTED_LIGHT_GRAY_SOLID_BLOCK = registerBlock("inverted_light_gray_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops().lightLevel((p_50872_) -> 15)), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> INVERTED_LIME_SOLID_BLOCK = registerBlock("inverted_lime_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops().lightLevel((p_50872_) -> 15)), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> INVERTED_MAGENTA_SOLID_BLOCK = registerBlock("inverted_magenta_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops().lightLevel((p_50872_) -> 15)), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> INVERTED_ORANGE_SOLID_BLOCK = registerBlock("inverted_orange_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops().lightLevel((p_50872_) -> 15)), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> INVERTED_PINK_SOLID_BLOCK = registerBlock("inverted_pink_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops().lightLevel((p_50872_) -> 15)), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> INVERTED_PURPLE_SOLID_BLOCK = registerBlock("inverted_purple_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops().lightLevel((p_50872_) -> 15)), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> INVERTED_RED_SOLID_BLOCK = registerBlock("inverted_red_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops().lightLevel((p_50872_) -> 15)), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> INVERTED_WHITE_SOLID_BLOCK = registerBlock("inverted_white_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops().lightLevel((p_50872_) -> 15)), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> INVERTED_YELLOW_SOLID_BLOCK = registerBlock("inverted_yellow_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops().lightLevel((p_50872_) -> 15)), ModCreativeModeTab.SCALAR_UTILS_TAB);
 
     /**
      * Registers the Block as a Block
