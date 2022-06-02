@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:gilded_diamond"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:gilded_diamond_chestplate",
+    "count": 1
+  }
+}

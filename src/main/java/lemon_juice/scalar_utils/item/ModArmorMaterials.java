@@ -15,7 +15,10 @@ import net.minecraft.util.LazyLoadedValue;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     GOLDEN_FEATHER("golden_feather", 5, new int[]{1, 2, 3, 1}, 15, SoundEvents.ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {return Ingredient.of(ModItems.GOLDEN_FEATHER.get());}),
+    GILDED_DIAMOND("gilded_diamond", 33, new int[]{3, 6, 8, 3}, 25, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {return Ingredient.of(ModItems.GILDED_DIAMOND.get());}),
+    GILDED_NETHERITE("gilded_netherite", 37, new int[]{3, 6, 8, 3}, 25, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {return Ingredient.of(ModItems.GILDED_NETHERITE_INGOT.get());}),
     GILDED_IRON("gilded_iron", 15, new int[]{2, 5, 6, 2}, 25, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {return Ingredient.of(ModItems.GILDED_IRON_INGOT.get());}),
+    MANA_CRYSTAL("mana_crystal", 5, new int[]{1, 2, 3, 1}, 15, SoundEvents.ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {return Ingredient.of(ModItems.MANA_CRYSTAL.get());}),
     SHULKER("shulker", 5, new int[]{1, 2, 3, 1}, 15, SoundEvents.ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {return Ingredient.of(Items.SHULKER_SHELL);}),
     VOIDSTONE("voidstone", 40, new int[]{3, 6, 8, 3}, 20, SoundEvents.ARMOR_EQUIP_GENERIC, 4.0F, 0.1F, () -> {return Ingredient.of(ModItems.VOIDSTONE.get());});
 

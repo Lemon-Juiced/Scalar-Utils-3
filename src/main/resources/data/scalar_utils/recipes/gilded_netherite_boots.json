@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "scalar_utils:gilded_diamond_boots"
+  },
+  "addition": {
+    "item": "scalar_utils:gilded_netherite_ingot"
+  },
+  "result": {
+    "item": "scalar_utils:gilded_netherite_boots"
+  }
+}

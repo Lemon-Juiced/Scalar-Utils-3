@@ -13,12 +13,12 @@ import net.minecraft.world.level.Level;
 
 import java.util.Map;
 
-public class FeatherFallArmorItem extends ArmorItem {
+public class StridingArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP = (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-            .put(ModArmorMaterials.GOLDEN_FEATHER, new MobEffectInstance(MobEffects.SLOW_FALLING, 200, 1))
+            .put(ModArmorMaterials.MANA_CRYSTAL, new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 2))
             .build();
 
-    public FeatherFallArmorItem(ArmorMaterial pMaterial, EquipmentSlot pSlot, Properties pProperties) {
+    public StridingArmorItem(ArmorMaterial pMaterial, EquipmentSlot pSlot, Properties pProperties) {
         super(pMaterial, pSlot, pProperties);
     }
 
