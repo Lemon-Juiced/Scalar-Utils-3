@@ -25,12 +25,12 @@ public class ModConfiguredFeatures {
     public static final RuleTest END_STONE = new BlockMatchTest(Blocks.END_STONE);
 
     //Flux Ore
-    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_FLUX_ORES = List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.FLUX_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_FLUX_ORE.get().defaultBlockState())
+    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_MANA_CRYSTAL_ORES = List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.MANA_CRYSTAL_ORE.get().defaultBlockState()),
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_MANA_CRYSTAL_ORE.get().defaultBlockState())
     );
 
-    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> FLUX_ORE = FeatureUtils.register("flux_ore", Feature.ORE, new OreConfiguration(OVERWORLD_FLUX_ORES, 2));
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> MANA_CRYSTAL = FeatureUtils.register("mana_crystal", Feature.ORE, new OreConfiguration(OVERWORLD_MANA_CRYSTAL_ORES, 2));
 
     //Voidstone Ore
     public static final List<OreConfiguration.TargetBlockState> END_VOIDSTONE_ORES = List.of(

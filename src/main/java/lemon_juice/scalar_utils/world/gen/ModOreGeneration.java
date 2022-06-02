@@ -12,7 +12,7 @@ public class ModOreGeneration {
     public static void generateOres(final BiomeLoadingEvent event){
         List<Holder<PlacedFeature>> base = event.getGeneration().getFeatures(GenerationStep.Decoration.UNDERGROUND_ORES);
 
-        base.add(ModPlacedFeatures.FLUX_ORE_PLACED);
+        base.add(ModPlacedFeatures.MANA_CRYSTAL_ORE_PLACED);
         base.add(ModPlacedFeatures.VOIDSTONE_ORE_PLACED);
     }
 }

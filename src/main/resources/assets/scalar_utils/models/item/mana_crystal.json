@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "scalar_utils:item/flux"
+    "layer0": "scalar_utils:item/mana_crystal"
   }
 }

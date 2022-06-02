@@ -42,9 +42,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_BLACK_LOTUS = registerBlockWithoutBlockItem("potted_black_lotus", () -> new FlowerPotBlock(null, ModBlocks.BLACK_LOTUS, BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()));
 
     //Overworld Ores
-    public static final RegistryObject<Block> DEEPSLATE_FLUX_ORE = registerBlock("deepslate_flux_ore", () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
-    public static final RegistryObject<Block> FLUX_BLOCK = registerBlock("flux_block", () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
-    public static final RegistryObject<Block> FLUX_ORE = registerBlock("flux_ore", () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> DEEPSLATE_MANA_CRYSTAL_ORE = registerBlock("deepslate_mana_crystal_ore", () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> MANA_CRYSTAL_BLOCK = registerBlock("mana_crystal_block", () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
+    public static final RegistryObject<Block> MANA_CRYSTAL_ORE = registerBlock("mana_crystal_ore", () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);
 
     //Solid Blocks
     public static final RegistryObject<Block> BLACK_SOLID_BLOCK = registerBlock("black_solid_block", () -> new Block(BlockBehaviour.Properties.of(Material.DECORATION).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTab.SCALAR_UTILS_TAB);

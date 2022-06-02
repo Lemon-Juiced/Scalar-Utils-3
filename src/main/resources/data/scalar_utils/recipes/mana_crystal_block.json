@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "scalar_utils:flux"
+      "item": "scalar_utils:mana_crystal"
     }
   },
   "result": {
-    "item": "scalar_utils:flux_block",
+    "item": "scalar_utils:mana_crysta_block",
     "count": 1
   }
 }

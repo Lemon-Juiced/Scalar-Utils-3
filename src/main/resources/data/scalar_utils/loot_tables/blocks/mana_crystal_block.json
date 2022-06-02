@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "scalar_utils:flux_block"
+          "name": "scalar_utils:mana_crystal_block"
         }
       ],
       "conditions": [

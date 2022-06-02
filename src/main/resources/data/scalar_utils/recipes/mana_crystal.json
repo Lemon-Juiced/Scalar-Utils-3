@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "scalar_utils:flux_block"
+      "item": "scalar_utils:mana_crystal_block"
     }
   ],
   "result": {
-    "item": "scalar_utils:flux",
+    "item": "scalar_utils:mana_crystal",
     "count": 9
   }
 }
