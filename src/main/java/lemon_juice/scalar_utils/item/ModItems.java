@@ -3,6 +3,11 @@ package lemon_juice.scalar_utils.item;
 import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.block.ModBlocks;
 import lemon_juice.scalar_utils.item.custom.*;
+import lemon_juice.scalar_utils.item.custom.armors.FeatherFallArmorItem;
+import lemon_juice.scalar_utils.item.custom.armors.GildedArmorItem;
+import lemon_juice.scalar_utils.item.custom.armors.ShulkerArmorItem;
+import lemon_juice.scalar_utils.item.custom.armors.StridingArmorItem;
+import lemon_juice.scalar_utils.item.custom.turtletrident.TurtleTridentItem;
 import lemon_juice.scalar_utils.item.custom.wands.tier1.FireWandItem;
 import lemon_juice.scalar_utils.item.custom.wands.tier1.HarmingWandItem;
 import lemon_juice.scalar_utils.item.custom.wands.tier1.HealingWandItem;
@@ -14,7 +19,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.lwjgl.system.CallbackI;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ScalarUtils.MOD_ID);
@@ -84,6 +88,7 @@ public class ModItems {
     //Gilded Iron
     public static final RegistryObject<Item> GILDED_IRON_INGOT = ITEMS.register("gilded_iron_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
     public static final RegistryObject<Item> GILDED_IRON_NUGGET = ITEMS.register("gilded_iron_nugget", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
+    public static final RegistryObject<Item> GILDED_IRON_ROD = ITEMS.register("gilded_iron_rod", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
     public static final RegistryObject<Item> GILDED_IRON_HELMET = ITEMS.register("gilded_iron_helmet", () -> new GildedArmorItem(ModArmorMaterials.GILDED_IRON, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
     public static final RegistryObject<Item> GILDED_IRON_CHESTPLATE = ITEMS.register("gilded_iron_chestplate", () -> new GildedArmorItem(ModArmorMaterials.GILDED_IRON, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
     public static final RegistryObject<Item> GILDED_IRON_LEGGINGS = ITEMS.register("gilded_iron_leggings", () -> new GildedArmorItem(ModArmorMaterials.GILDED_IRON, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
@@ -101,7 +106,6 @@ public class ModItems {
     public static final RegistryObject<Item> CRANK = ITEMS.register("crank", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
     public static final RegistryObject<Item> FLEXIMESH = ITEMS.register("fleximesh", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
     public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
-
     public static final RegistryObject<Item> MANA_CRYSTAL = ITEMS.register("mana_crystal", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
     public static final RegistryObject<Item> GILDED_IRON_CHASSIS = ITEMS.register("gilded_iron_chassis", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
     public static final RegistryObject<Item> GOLDEN_FEATHER = ITEMS.register("golden_feather", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
@@ -109,6 +113,7 @@ public class ModItems {
     public static final RegistryObject<Item> LEMON_QUARTZ_BLADE = ITEMS.register("lemon_quartz_blade", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
     public static final RegistryObject<Item> RICE_SLIMEBALL = ITEMS.register("rice_slimeball", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
     public static final RegistryObject<Item> SYNTHETIC_EMERALD = ITEMS.register("synthetic_emerald", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
+    public static final RegistryObject<Item> TURTLE_INGOT = ITEMS.register("turtle_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
 
     //Misc. Armor
     public static final RegistryObject<Item> BOOTS_OF_STRIDING = ITEMS.register("boots_of_striding", () -> new StridingArmorItem(ModArmorMaterials.MANA_CRYSTAL, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB)));
@@ -154,6 +159,9 @@ public class ModItems {
     public static final RegistryObject<Item> WAND_OF_HEALING = ITEMS.register("wand_of_healing", () -> new HealingWandItem(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB).stacksTo(1).durability(255)));
     public static final RegistryObject<Item> WAND_OF_POISON = ITEMS.register("wand_of_poison", () -> new PoisonWandItem(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB).stacksTo(1).durability(255)));
     public static final RegistryObject<Item> WAND_OF_WITHER = ITEMS.register("wand_of_wither", () -> new WitherWandItem(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB).stacksTo(1).durability(255)));
+
+    //Weapons
+    public static final RegistryObject<Item> TURTLE_TRIDENT = ITEMS.register("turtle_trident", () -> new TurtleTridentItem(new Item.Properties().tab(ModCreativeModeTab.SCALAR_UTILS_TAB).stacksTo(1).durability(63)));
 
     /**
      * Registers Items to the Deferred Register of Items

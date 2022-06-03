@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.item.custom;
+package lemon_juice.scalar_utils.item.custom.armors;
 
 import com.google.common.collect.ImmutableMap;
 import lemon_juice.scalar_utils.item.ModArmorMaterials;

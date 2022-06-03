@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.item.custom;
+package lemon_juice.scalar_utils.item.custom.armors;
 
 import lemon_juice.scalar_utils.item.ModArmorMaterials;
 import net.minecraft.world.entity.EquipmentSlot;
