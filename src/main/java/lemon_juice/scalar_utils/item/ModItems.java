@@ -57,10 +57,10 @@ public class ModItems {
     public static final RegistryObject<Item> GRILLED_MEAT_AND_CHEESE = ITEMS.register("grilled_meat_and_cheese", () -> new Item(new Item.Properties().food(ModFoods.GRILLED_MEAT_AND_CHEESE).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
 
     /* Ice Cream */
-    public static final RegistryObject<Item> CHOCOLATE_ICE_CREAM = ITEMS.register("chocolate_ice_cream", () -> new Item(new Item.Properties().food(ModFoods.YOGURT).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
-    public static final RegistryObject<Item> VANILLA_ICE_CREAM = ITEMS.register("vanilla_ice_cream", () -> new Item(new Item.Properties().food(ModFoods.YOGURT).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
-    public static final RegistryObject<Item> STRAWBERRY_ICE_CREAM = ITEMS.register("strawberry_ice_cream", () -> new Item(new Item.Properties().food(ModFoods.YOGURT).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
-    public static final RegistryObject<Item> NEOPOLITAN_ICE_CREAM = ITEMS.register("neopolitan_ice_cream", () -> new Item(new Item.Properties().food(ModFoods.YOGURT).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> CHOCOLATE_ICE_CREAM = ITEMS.register("chocolate_ice_cream", () -> new Item(new Item.Properties().food(ModFoods.ICE_CREAM).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> VANILLA_ICE_CREAM = ITEMS.register("vanilla_ice_cream", () -> new Item(new Item.Properties().food(ModFoods.ICE_CREAM).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> STRAWBERRY_ICE_CREAM = ITEMS.register("strawberry_ice_cream", () -> new Item(new Item.Properties().food(ModFoods.ICE_CREAM).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> NEOPOLITAN_ICE_CREAM = ITEMS.register("neopolitan_ice_cream", () -> new Item(new Item.Properties().food(ModFoods.ICE_CREAM).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
 
     /* Meat */
     public static final RegistryObject<Item> COOKED_MEAT = ITEMS.register("cooked_meat", () -> new Item(new Item.Properties().food(ModFoods.COOKED_MEAT).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
