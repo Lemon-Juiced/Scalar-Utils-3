@@ -3,10 +3,7 @@ package lemon_juice.scalar_utils.item;
 import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.block.ModBlocks;
 import lemon_juice.scalar_utils.item.custom_items.*;
-import lemon_juice.scalar_utils.item.custom_items.armors.FeatherFallArmorItem;
-import lemon_juice.scalar_utils.item.custom_items.armors.GildedArmorItem;
-import lemon_juice.scalar_utils.item.custom_items.armors.ShulkerArmorItem;
-import lemon_juice.scalar_utils.item.custom_items.armors.StridingArmorItem;
+import lemon_juice.scalar_utils.item.custom_items.armors.*;
 import lemon_juice.scalar_utils.item.custom_items.consumables.ChocolateMilkItem;
 import lemon_juice.scalar_utils.item.custom_items.consumables.FreshMilkItem;
 import lemon_juice.scalar_utils.item.custom_items.consumables.HotCocoaItem;
@@ -102,11 +99,11 @@ public class ModItems {
     public static final RegistryObject<Item> GILDED_IRON_BOOTS = ITEMS.register("gilded_iron_boots", () -> new GildedArmorItem(ModArmorMaterials.GILDED_IRON, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
 
     //Gilded Netherite
-    public static final RegistryObject<Item> GILDED_NETHERITE_INGOT = ITEMS.register("gilded_netherite_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
-    public static final RegistryObject<Item> GILDED_NETHERITE_HELMET = ITEMS.register("gilded_netherite_helmet", () -> new GildedArmorItem(ModArmorMaterials.GILDED_NETHERITE, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
-    public static final RegistryObject<Item> GILDED_NETHERITE_CHESTPLATE = ITEMS.register("gilded_netherite_chestplate", () -> new GildedArmorItem(ModArmorMaterials.GILDED_NETHERITE, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
-    public static final RegistryObject<Item> GILDED_NETHERITE_LEGGINGS = ITEMS.register("gilded_netherite_leggings", () -> new GildedArmorItem(ModArmorMaterials.GILDED_NETHERITE, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
-    public static final RegistryObject<Item> GILDED_NETHERITE_BOOTS = ITEMS.register("gilded_netherite_boots", () -> new GildedArmorItem(ModArmorMaterials.GILDED_NETHERITE, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> GILDED_NETHERITE_INGOT = ITEMS.register("gilded_netherite_ingot", () -> new Item(new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> GILDED_NETHERITE_HELMET = ITEMS.register("gilded_netherite_helmet", () -> new GildedArmorItem(ModArmorMaterials.GILDED_NETHERITE, EquipmentSlot.HEAD, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> GILDED_NETHERITE_CHESTPLATE = ITEMS.register("gilded_netherite_chestplate", () -> new GildedArmorItem(ModArmorMaterials.GILDED_NETHERITE, EquipmentSlot.CHEST, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> GILDED_NETHERITE_LEGGINGS = ITEMS.register("gilded_netherite_leggings", () -> new GildedArmorItem(ModArmorMaterials.GILDED_NETHERITE, EquipmentSlot.LEGS, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> GILDED_NETHERITE_BOOTS = ITEMS.register("gilded_netherite_boots", () -> new GildedArmorItem(ModArmorMaterials.GILDED_NETHERITE, EquipmentSlot.FEET, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
 
     //Items
     public static final RegistryObject<Item> CITRIC_COMPOUND = ITEMS.register("citric_compound", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
@@ -140,19 +137,19 @@ public class ModItems {
     public static final RegistryObject<Item> IRON_GREATSWORD = ITEMS.register("iron_greatsword", () -> new SwordItem(ModTiers.GREAT_IRON, 3, -2.4f, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> GOLDEN_GREATSWORD = ITEMS.register("golden_greatsword", () -> new SwordItem(ModTiers.GREAT_GOLD, 3, -2.4f, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> DIAMOND_GREATSWORD = ITEMS.register("diamond_greatsword", () -> new SwordItem(ModTiers.GREAT_DIAMOND, 3, -2.4f, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
-    public static final RegistryObject<Item> NETHERITE_GREATSWORD = ITEMS.register("netherite_greatsword", () -> new SwordItem(ModTiers.GREAT_NETHERITE, 3, -2.4f, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> NETHERITE_GREATSWORD = ITEMS.register("netherite_greatsword", () -> new SwordItem(ModTiers.GREAT_NETHERITE, 3, -2.4f, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
 
     //Voidstone
     public static final RegistryObject<Item> VOIDSTONE = ITEMS.register("voidstone", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
-    public static final RegistryObject<Item> VOIDSTONE_SWORD = ITEMS.register("voidstone_sword", () -> new SwordItem(ModTiers.VOIDSTONE, 3, -2.4f, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
-    public static final RegistryObject<Item> VOIDSTONE_PICKAXE= ITEMS.register("voidstone_pickaxe", () -> new PickaxeItem(ModTiers.VOIDSTONE, 1, -2.8f, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
-    public static final RegistryObject<Item> VOIDSTONE_AXE = ITEMS.register("voidstone_axe", () -> new AxeItem(ModTiers.VOIDSTONE, 5, -3f, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
-    public static final RegistryObject<Item> VOIDSTONE_SHOVEL = ITEMS.register("voidstone_shovel", () -> new ShovelItem(ModTiers.VOIDSTONE, 1, -3f, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
-    public static final RegistryObject<Item> VOIDSTONE_HOE = ITEMS.register("voidstone_hoe", () -> new HoeItem(ModTiers.VOIDSTONE, -5, 0f, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
-    public static final RegistryObject<Item> VOIDSTONE_HELMET = ITEMS.register("voidstone_helmet", () -> new GildedArmorItem(ModArmorMaterials.VOIDSTONE, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
-    public static final RegistryObject<Item> VOIDSTONE_CHESTPLATE = ITEMS.register("voidstone_chestplate", () -> new GildedArmorItem(ModArmorMaterials.VOIDSTONE, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
-    public static final RegistryObject<Item> VOIDSTONE_LEGGINGS = ITEMS.register("voidstone_leggings", () -> new GildedArmorItem(ModArmorMaterials.VOIDSTONE, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
-    public static final RegistryObject<Item> VOIDSTONE_BOOTS = ITEMS.register("voidstone_boots", () -> new GildedArmorItem(ModArmorMaterials.VOIDSTONE, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> VOIDSTONE_SWORD = ITEMS.register("voidstone_sword", () -> new SwordItem(ModTiers.VOIDSTONE, 3, -2.4f, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> VOIDSTONE_PICKAXE= ITEMS.register("voidstone_pickaxe", () -> new PickaxeItem(ModTiers.VOIDSTONE, 1, -2.8f, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> VOIDSTONE_AXE = ITEMS.register("voidstone_axe", () -> new AxeItem(ModTiers.VOIDSTONE, 5, -3f, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> VOIDSTONE_SHOVEL = ITEMS.register("voidstone_shovel", () -> new ShovelItem(ModTiers.VOIDSTONE, 1, -3f, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> VOIDSTONE_HOE = ITEMS.register("voidstone_hoe", () -> new HoeItem(ModTiers.VOIDSTONE, -5, 0f, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> VOIDSTONE_HELMET = ITEMS.register("voidstone_helmet", () -> new VoidstoneArmorItem(ModArmorMaterials.VOIDSTONE, EquipmentSlot.HEAD, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> VOIDSTONE_CHESTPLATE = ITEMS.register("voidstone_chestplate", () -> new VoidstoneArmorItem(ModArmorMaterials.VOIDSTONE, EquipmentSlot.CHEST, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> VOIDSTONE_LEGGINGS = ITEMS.register("voidstone_leggings", () -> new VoidstoneArmorItem(ModArmorMaterials.VOIDSTONE, EquipmentSlot.LEGS, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> VOIDSTONE_BOOTS = ITEMS.register("voidstone_boots", () -> new VoidstoneArmorItem(ModArmorMaterials.VOIDSTONE, EquipmentSlot.FEET, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> VOIDSTONE_GREATSWORD = ITEMS.register("voidstone_greatsword", () -> new SwordItem(ModTiers.GREAT_VOIDSTONE, 3, -2.4f, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
 
     //Wands
