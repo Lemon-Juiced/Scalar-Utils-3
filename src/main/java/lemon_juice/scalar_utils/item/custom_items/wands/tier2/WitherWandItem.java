@@ -20,6 +20,12 @@ public class WitherWandItem extends Item {
             livingEntity.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 1));
         }
 
+        if (player != null) {
+            player.getItemInHand(player.getUsedItemHand()).hurtAndBreak(1, player, (p_41303_) -> {
+                p_41303_.broadcastBreakEvent(player.getUsedItemHand());
+            });
+        }
+
         return super.onLeftClickEntity(stack, player, entity);
     }
 }

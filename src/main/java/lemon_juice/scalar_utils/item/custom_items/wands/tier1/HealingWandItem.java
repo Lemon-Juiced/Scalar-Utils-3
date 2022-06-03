@@ -22,11 +22,17 @@ public class HealingWandItem extends Item {
 
     @Override
     public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
-        if(entity instanceof LivingEntity){
+        if (entity instanceof LivingEntity) {
             LivingEntity livingEntity = (LivingEntity) entity;
-            if(livingEntity.getHealth() < livingEntity.getMaxHealth()){
+            if (livingEntity.getHealth() < livingEntity.getMaxHealth()) {
                 livingEntity.setHealth(livingEntity.getMaxHealth());
             }
+        }
+
+        if (player != null) {
+            player.getItemInHand(player.getUsedItemHand()).hurtAndBreak(1, player, (p_41303_) -> {
+                p_41303_.broadcastBreakEvent(player.getUsedItemHand());
+            });
         }
 
         return super.onLeftClickEntity(stack, player, entity);
@@ -34,14 +40,21 @@ public class HealingWandItem extends Item {
 
     @Override
     public InteractionResult useOn(UseOnContext pContext) {
-       if(!pContext.getLevel().isClientSide){
-           Player player = pContext.getPlayer();
-           if(player.getHealth() < player.getMaxHealth()) {
-               player.setHealth(player.getMaxHealth());
-           }
-       }
+        if (!pContext.getLevel().isClientSide) {
+            Player player = pContext.getPlayer();
+            if (player.getHealth() < player.getMaxHealth()) {
+                player.setHealth(player.getMaxHealth());
+            }
+        }
 
-       return super.useOn(pContext);
+        Player player = pContext.getPlayer();
+        if (player != null) {
+            pContext.getItemInHand().hurtAndBreak(1, player, (p_41303_) -> {
+                p_41303_.broadcastBreakEvent(pContext.getHand());
+            });
+        }
+
+        return super.useOn(pContext);
     }
 
 }

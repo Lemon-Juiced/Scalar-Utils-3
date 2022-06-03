@@ -28,6 +28,12 @@ public class HarmingWandItem extends Item {
             }
         }
 
+        if (player != null) {
+            player.getItemInHand(player.getUsedItemHand()).hurtAndBreak(1, player, (p_41303_) -> {
+                p_41303_.broadcastBreakEvent(player.getUsedItemHand());
+            });
+        }
+
         return super.onLeftClickEntity(stack, player, entity);
     }
 
