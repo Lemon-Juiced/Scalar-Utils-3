@@ -3,7 +3,6 @@ package lemon_juice.scalar_utils;
 import com.mojang.logging.LogUtils;
 import lemon_juice.scalar_utils.block.ModBlocks;
 import lemon_juice.scalar_utils.item.ModItems;
-import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;

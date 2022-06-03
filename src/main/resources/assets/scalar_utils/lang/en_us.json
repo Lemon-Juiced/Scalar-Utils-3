@@ -137,5 +137,7 @@
   "block.scalar_utils.voidstone_block": "Voidstone Block",
   "block.scalar_utils.voidstone_ore": "Voidstone Ore",
 
-  "itemGroup.scalar_utils_tab": "Scalar Utils 3"
+  "itemGroup.sc_utils_items_tab": "Scalar Utils 3 Items",
+  "itemGroup.sc_utils_atw_tab": "Scalar Utils 3 Armor, Tools, & Weapons",
+  "itemGroup.sc_utils_blocks_tab": "Scalar Utils 3 Blocks"
 }
