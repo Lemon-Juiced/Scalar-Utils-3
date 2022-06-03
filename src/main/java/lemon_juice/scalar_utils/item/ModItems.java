@@ -7,6 +7,9 @@ import lemon_juice.scalar_utils.item.custom.armors.FeatherFallArmorItem;
 import lemon_juice.scalar_utils.item.custom.armors.GildedArmorItem;
 import lemon_juice.scalar_utils.item.custom.armors.ShulkerArmorItem;
 import lemon_juice.scalar_utils.item.custom.armors.StridingArmorItem;
+import lemon_juice.scalar_utils.item.custom.consumables.ChocolateMilkItem;
+import lemon_juice.scalar_utils.item.custom.consumables.FreshMilkItem;
+import lemon_juice.scalar_utils.item.custom.consumables.HotCocoaItem;
 import lemon_juice.scalar_utils.item.custom.turtletrident.TurtleTridentItem;
 import lemon_juice.scalar_utils.item.custom.wands.tier1.FireWandItem;
 import lemon_juice.scalar_utils.item.custom.wands.tier1.HarmingWandItem;
@@ -67,9 +70,9 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_MEAT = ITEMS.register("raw_meat", () -> new Item(new Item.Properties().food(ModFoods.RAW_MEAT).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
 
     /* Milks */
-    public static final RegistryObject<Item> CHOCOLATE_MILK = ITEMS.register("chocolate_milk", () -> new Item(new Item.Properties().food(ModFoods.CHOCOLATE_MILK).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> CHOCOLATE_MILK = ITEMS.register("chocolate_milk", () -> new ChocolateMilkItem(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> FRESH_MILK = ITEMS.register("fresh_milk", () -> new FreshMilkItem(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
-    public static final RegistryObject<Item> HOT_COCOA = ITEMS.register("hot_cocoa", () -> new Item(new Item.Properties().food(ModFoods.HOT_COCOA).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> HOT_COCOA = ITEMS.register("hot_cocoa", () -> new HotCocoaItem(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
 
     /* Yogurt */
     public static final RegistryObject<Item> YOGURT = ITEMS.register("yogurt", () -> new Item(new Item.Properties().food(ModFoods.YOGURT).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
