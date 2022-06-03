@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.item.custom.wands.tier1;
+package lemon_juice.scalar_utils.item.custom_items.wands.tier1;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -12,8 +12,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
-public class PoisonWandItem extends Item {
-    public PoisonWandItem(Properties pProperties) {
+public class HarmingWandItem extends Item {
+    public HarmingWandItem(Properties pProperties) {
         super(pProperties);
     }
 
@@ -22,26 +22,13 @@ public class PoisonWandItem extends Item {
         if(entity instanceof LivingEntity){
             LivingEntity livingEntity = (LivingEntity) entity;
             if(isUndead(livingEntity)){
-                livingEntity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 1));
-            } else if(isSpider(livingEntity)){
-                //Do nothing, spiders are immune, but don't apply
+                livingEntity.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 1));
             } else {
-                livingEntity.addEffect(new MobEffectInstance(MobEffects.POISON, 100, 1));
+                livingEntity.addEffect(new MobEffectInstance(MobEffects.HARM, 1, 1));
             }
         }
 
         return super.onLeftClickEntity(stack, player, entity);
-    }
-
-    /**
-     * @param entity A LivingEntity
-     * @return true if entity is a spider or cave spider, false otherwise
-     */
-    public boolean isSpider(LivingEntity entity){
-        if(entity instanceof Spider || entity instanceof CaveSpider){
-            return true;
-        }
-        return false;
     }
 
     /**

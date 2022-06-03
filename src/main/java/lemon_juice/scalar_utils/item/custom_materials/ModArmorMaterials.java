@@ -1,6 +1,7 @@
-package lemon_juice.scalar_utils.item;
+package lemon_juice.scalar_utils.item.custom_materials;
 
 import lemon_juice.scalar_utils.ScalarUtils;
+import lemon_juice.scalar_utils.item.ModItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;

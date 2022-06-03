@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.item.custom.consumables;
+package lemon_juice.scalar_utils.item.custom_items.consumables;
 
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;

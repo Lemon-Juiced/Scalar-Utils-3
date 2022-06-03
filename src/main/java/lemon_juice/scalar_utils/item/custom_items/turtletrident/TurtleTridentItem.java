@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.item.custom.turtletrident;
+package lemon_juice.scalar_utils.item.custom_items.turtletrident;
 
 import net.minecraft.world.item.TridentItem;
 

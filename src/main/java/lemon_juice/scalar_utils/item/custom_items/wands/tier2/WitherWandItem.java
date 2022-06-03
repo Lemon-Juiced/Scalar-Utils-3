@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.item.custom.wands.tier2;
+package lemon_juice.scalar_utils.item.custom_items.wands.tier2;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.item.custom;
+package lemon_juice.scalar_utils.item.custom_items;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;

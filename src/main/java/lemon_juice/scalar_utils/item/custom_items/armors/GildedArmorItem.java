@@ -1,6 +1,6 @@
-package lemon_juice.scalar_utils.item.custom.armors;
+package lemon_juice.scalar_utils.item.custom_items.armors;
 
-import lemon_juice.scalar_utils.item.ModArmorMaterials;
+import lemon_juice.scalar_utils.item.custom_materials.ModArmorMaterials;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorItem;

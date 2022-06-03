@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.item.custom.wands.tier1;
+package lemon_juice.scalar_utils.item.custom_items.wands.tier1;
 
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
