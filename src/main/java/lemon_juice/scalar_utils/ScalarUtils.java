@@ -40,6 +40,9 @@ public class ScalarUtils
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RICE_PLANT.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.STRAWBERRY_PLANT.get(), RenderType.cutout());
 
+        //Blocks
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GILDED_IRON_CHASSIS.get(), RenderType.translucent());
+
         //Flowers
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLACK_LOTUS.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_BLACK_LOTUS.get(), RenderType.cutout());

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "scalar_utils:block/illuminant_magenta_solid_block"}
+  }
+}
