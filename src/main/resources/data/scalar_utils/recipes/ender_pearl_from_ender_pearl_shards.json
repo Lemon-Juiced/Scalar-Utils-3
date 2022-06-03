@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalar_utils:ender_pearl_shard"
+    },
+    {
+      "item": "scalar_utils:ender_pearl_shard"
+    },
+    {
+      "item": "scalar_utils:ender_pearl_shard"
+    },
+    {
+      "item": "scalar_utils:ender_pearl_shard"
+    },
+    {
+      "item": "scalar_utils:ender_pearl_shard"
+    },
+    {
+      "item": "scalar_utils:ender_pearl_shard"
+    },
+    {
+      "item": "scalar_utils:ender_pearl_shard"
+    },
+    {
+      "item": "scalar_utils:ender_pearl_shard"
+    }
+  ],
+  "result": {
+    "item": "minecraft:ender_pearl",
+    "count": 1
+  }
+}

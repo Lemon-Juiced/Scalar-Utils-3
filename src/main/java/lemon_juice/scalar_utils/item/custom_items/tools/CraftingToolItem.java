@@ -1,10 +1,10 @@
-package lemon_juice.scalar_utils.item.custom_items;
+package lemon_juice.scalar_utils.item.custom_items.tools;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
-public class ToolItem extends Item {
-    public ToolItem(Properties pProperties) {
+public class CraftingToolItem extends Item {
+    public CraftingToolItem(Properties pProperties) {
         super(pProperties);
     }
 

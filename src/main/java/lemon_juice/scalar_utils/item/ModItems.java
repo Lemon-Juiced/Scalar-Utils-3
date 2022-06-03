@@ -10,6 +10,8 @@ import lemon_juice.scalar_utils.item.custom_items.armors.StridingArmorItem;
 import lemon_juice.scalar_utils.item.custom_items.consumables.ChocolateMilkItem;
 import lemon_juice.scalar_utils.item.custom_items.consumables.FreshMilkItem;
 import lemon_juice.scalar_utils.item.custom_items.consumables.HotCocoaItem;
+import lemon_juice.scalar_utils.item.custom_items.tools.CraftingToolItem;
+import lemon_juice.scalar_utils.item.custom_items.tools.GlassCutterItem;
 import lemon_juice.scalar_utils.item.custom_items.turtletrident.TurtleTridentItem;
 import lemon_juice.scalar_utils.item.custom_items.wands.tier1.FireWandItem;
 import lemon_juice.scalar_utils.item.custom_items.wands.tier1.HarmingWandItem;
@@ -36,9 +38,9 @@ public class ModItems {
     public static final RegistryObject<Item> FLAX = ITEMS.register("flax", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
 
     //Custom Crafting Tools
-    public static final RegistryObject<Item> MEAT_GRINDER = ITEMS.register("meat_grinder", () -> new ToolItem(new Item.Properties().stacksTo(1).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
-    public static final RegistryObject<Item> PAN = ITEMS.register("pan", () -> new ToolItem(new Item.Properties().stacksTo(1).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
-    public static final RegistryObject<Item> POT = ITEMS.register("pot", () -> new ToolItem(new Item.Properties().stacksTo(1).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> MEAT_GRINDER = ITEMS.register("meat_grinder", () -> new CraftingToolItem(new Item.Properties().stacksTo(1).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> PAN = ITEMS.register("pan", () -> new CraftingToolItem(new Item.Properties().stacksTo(1).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> POT = ITEMS.register("pot", () -> new CraftingToolItem(new Item.Properties().stacksTo(1).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
 
     //Food
     /* Basic Foods */
@@ -108,9 +110,11 @@ public class ModItems {
 
     //Items
     public static final RegistryObject<Item> CITRIC_COMPOUND = ITEMS.register("citric_compound", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> ENDER_PEARL_SHARD = ITEMS.register("ender_pearl_shard", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> FLEXIMESH = ITEMS.register("fleximesh", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> MANA_CRYSTAL = ITEMS.register("mana_crystal", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> MANA_ORB = ITEMS.register("mana_orb", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> GOLDEN_FEATHER = ITEMS.register("golden_feather", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> LEMON_QUARTZ = ITEMS.register("lemon_quartz", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> RICE_SLIMEBALL = ITEMS.register("rice_slimeball", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
@@ -126,6 +130,9 @@ public class ModItems {
     public static final RegistryObject<Item> FLAX_SEEDS = ITEMS.register("flax_seeds", () -> new ItemNameBlockItem(ModBlocks.FLAX_PLANT.get(), new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> RICE_SEEDS = ITEMS.register("rice_seeds", () -> new ItemNameBlockItem(ModBlocks.RICE_PLANT.get(), new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds", () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_PLANT.get(), new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+
+    //Tools
+    public static final RegistryObject<Item> GLASS_CUTTER = ITEMS.register("glass_cutter", () -> new GlassCutterItem(Tiers.IRON, 1, 1f, new Item.Properties().durability(1-23).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
 
     //Vanilla Greatswords
     public static final RegistryObject<Item> WOODEN_GREATSWORD = ITEMS.register("wooden_greatsword", () -> new SwordItem(ModTiers.GREAT_WOOD, 3, -2.4f, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
@@ -149,8 +156,10 @@ public class ModItems {
     public static final RegistryObject<Item> VOIDSTONE_GREATSWORD = ITEMS.register("voidstone_greatsword", () -> new SwordItem(ModTiers.GREAT_VOIDSTONE, 3, -2.4f, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
 
     //Wands
+    public static final RegistryObject<Item> ADVANCED_WAND = ITEMS.register("advanced_wand", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> BASIC_WAND = ITEMS.register("basic_wand", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> GILDED_IRON_WAND_CAP = ITEMS.register("gilded_iron_wand_cap", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> GILDED_DIAMOND_WAND_CAP = ITEMS.register("gilded_diamond_wand_cap", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> FIRE_FOCUS = ITEMS.register("fire_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> HARMING_FOCUS = ITEMS.register("harming_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> HEALING_FOCUS = ITEMS.register("healing_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
