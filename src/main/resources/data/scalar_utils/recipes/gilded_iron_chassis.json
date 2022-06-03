@@ -1,14 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "gcg",
+    "ggg",
     "GGG",
     "ggg"
   ],
   "key": {
-    "c": {
-      "item": "scalar_utils:crank"
-    },
     "g": {
       "item": "scalar_utils:gilded_iron_ingot"
     },

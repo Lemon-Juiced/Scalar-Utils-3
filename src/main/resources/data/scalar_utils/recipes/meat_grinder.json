@@ -1,15 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " # ",
-    "LLL"
+    "###",
+    "#I#",
+    "###"
   ],
   "key": {
     "#": {
-      "item": "scalar_utils:gilded_iron_chassis"
+      "item": "minecraft:iron_nugget"
     },
-    "L": {
-      "item": "scalar_utils:lemon_quartz_blade"
+    "I": {
+      "item": "minecraft:iron_ingot"
     }
   },
   "result": {

@@ -22,5 +22,4 @@ public class ModEventBusEvents {
                 new StrawberrySeedsFromGrassAdditionModifier.Serializer().setRegistryName(new ResourceLocation(ScalarUtils.MOD_ID, "strawberry_seeds_from_grass"))
         );
     }
-
 }

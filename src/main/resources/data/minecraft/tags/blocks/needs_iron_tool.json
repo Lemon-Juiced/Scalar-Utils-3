@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "scalar_utils:gilded_iron_block"
+    "scalar_utils:gilded_iron_block",
+    "scalar_utils:gilded_iron_chassis"
   ]
 }
