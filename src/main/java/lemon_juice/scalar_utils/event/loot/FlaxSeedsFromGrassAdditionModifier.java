@@ -25,7 +25,7 @@ public class FlaxSeedsFromGrassAdditionModifier extends LootModifier {
     @NotNull
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() > 0.05f){
+        if(context.getRandom().nextFloat() > 0.95f){
             generatedLoot.add(new ItemStack(addition, 1));
         }
         return generatedLoot;
