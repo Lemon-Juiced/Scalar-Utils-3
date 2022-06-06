@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "scalar_utils:basic_wand"
+      "item": "scalar_utils:advanced_wand"
     },
     {
-      "item": "scalar_utils:poison_focus"
+      "item": "scalar_utils:mining_focus"
     }
   ],
   "result": {
-    "item": "scalar_utils:wand_of_poison",
+    "item": "scalar_utils:wand_of_mining",
     "count": 1
   }
 }

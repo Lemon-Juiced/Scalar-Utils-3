@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " / ",
+    "#  "
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:gilded_diamond_wand_cap"
+    },
+    "/": {
+      "item": "scalar_utils:gilded_iron_rod"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:advanced_wand",
+    "count": 1
+  }
+}

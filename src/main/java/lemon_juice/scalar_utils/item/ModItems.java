@@ -14,6 +14,7 @@ import lemon_juice.scalar_utils.item.custom_items.wands.tier1.FireWandItem;
 import lemon_juice.scalar_utils.item.custom_items.wands.tier1.HarmingWandItem;
 import lemon_juice.scalar_utils.item.custom_items.wands.tier1.HealingWandItem;
 import lemon_juice.scalar_utils.item.custom_items.wands.tier1.PoisonWandItem;
+import lemon_juice.scalar_utils.item.custom_items.wands.tier2.LightningWandItem;
 import lemon_juice.scalar_utils.item.custom_items.wands.tier2.WitherWandItem;
 import lemon_juice.scalar_utils.item.custom_materials.ModArmorMaterials;
 import lemon_juice.scalar_utils.item.custom_materials.ModTiers;
@@ -141,6 +142,7 @@ public class ModItems {
 
     //Voidstone
     public static final RegistryObject<Item> VOIDSTONE = ITEMS.register("voidstone", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+
     public static final RegistryObject<Item> VOIDSTONE_SWORD = ITEMS.register("voidstone_sword", () -> new SwordItem(ModTiers.VOIDSTONE, 3, -2.4f, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> VOIDSTONE_PICKAXE= ITEMS.register("voidstone_pickaxe", () -> new PickaxeItem(ModTiers.VOIDSTONE, 1, -2.8f, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> VOIDSTONE_AXE = ITEMS.register("voidstone_axe", () -> new AxeItem(ModTiers.VOIDSTONE, 5, -3f, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
@@ -153,18 +155,29 @@ public class ModItems {
     public static final RegistryObject<Item> VOIDSTONE_GREATSWORD = ITEMS.register("voidstone_greatsword", () -> new SwordItem(ModTiers.GREAT_VOIDSTONE, 3, -2.4f, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
 
     //Wands
+    /* Base Wands */
     public static final RegistryObject<Item> ADVANCED_WAND = ITEMS.register("advanced_wand", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> BASIC_WAND = ITEMS.register("basic_wand", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+
+    /* Wand Caps */
     public static final RegistryObject<Item> GILDED_IRON_WAND_CAP = ITEMS.register("gilded_iron_wand_cap", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> GILDED_DIAMOND_WAND_CAP = ITEMS.register("gilded_diamond_wand_cap", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+
+    /* Wand Foci */
     public static final RegistryObject<Item> FIRE_FOCUS = ITEMS.register("fire_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> HARMING_FOCUS = ITEMS.register("harming_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> HEALING_FOCUS = ITEMS.register("healing_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> LIGHTNING_FOCUS = ITEMS.register("lightning_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> MINING_FOCUS = ITEMS.register("mining_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> POISON_FOCUS = ITEMS.register("poison_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> WITHER_FOCUS = ITEMS.register("wither_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+
+    /* Wands With Effects */
     public static final RegistryObject<Item> WAND_OF_FIRE = ITEMS.register("wand_of_fire", () -> new FireWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> WAND_OF_HARMING = ITEMS.register("wand_of_harming", () -> new HarmingWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> WAND_OF_HEALING = ITEMS.register("wand_of_healing", () -> new HealingWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> WAND_OF_LIGHTNING = ITEMS.register("wand_of_lightning", () -> new LightningWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> WAND_OF_MINING = ITEMS.register("wand_of_mining", () -> new LightningWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> WAND_OF_POISON = ITEMS.register("wand_of_poison", () -> new PoisonWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> WAND_OF_WITHER = ITEMS.register("wand_of_wither", () -> new WitherWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
 

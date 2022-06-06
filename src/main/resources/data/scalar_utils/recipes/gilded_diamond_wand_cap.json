@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#G#",
+    "G G"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:gilded_iron_nugget"
+    },
+    "G" : {
+      "item": "scalar_utils:gilded_diamond"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:gilded_diamond_wand_cap",
+    "count": 1
+  }
+}
