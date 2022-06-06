@@ -8,4 +8,9 @@ public class GlassCutterItem extends PickaxeItem {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
 
+    @Override
+    public boolean isRepairable(ItemStack stack) {
+        return false;
+    }
+
 }
