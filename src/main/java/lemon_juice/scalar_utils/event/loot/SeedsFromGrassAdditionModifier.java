@@ -14,10 +14,10 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class FlaxSeedsFromGrassAdditionModifier extends LootModifier {
+public class SeedsFromGrassAdditionModifier extends LootModifier {
     private final Item addition;
 
-    protected FlaxSeedsFromGrassAdditionModifier(LootItemCondition[] conditionsIn, Item addition) {
+    protected SeedsFromGrassAdditionModifier(LootItemCondition[] conditionsIn, Item addition) {
         super(conditionsIn);
         this.addition = addition;
     }
@@ -31,16 +31,16 @@ public class FlaxSeedsFromGrassAdditionModifier extends LootModifier {
         return generatedLoot;
     }
 
-    public static class Serializer extends GlobalLootModifierSerializer<FlaxSeedsFromGrassAdditionModifier> {
+    public static class Serializer extends GlobalLootModifierSerializer<SeedsFromGrassAdditionModifier> {
 
         @Override
-        public FlaxSeedsFromGrassAdditionModifier read(ResourceLocation location, JsonObject object, LootItemCondition[] ailootcondition) {
+        public SeedsFromGrassAdditionModifier read(ResourceLocation location, JsonObject object, LootItemCondition[] ailootcondition) {
             Item addition = ForgeRegistries.ITEMS.getValue(new ResourceLocation(GsonHelper.getAsString(object, "addition")));
-            return new FlaxSeedsFromGrassAdditionModifier(ailootcondition, addition);
+            return new SeedsFromGrassAdditionModifier(ailootcondition, addition);
         }
 
         @Override
-        public JsonObject write(FlaxSeedsFromGrassAdditionModifier instance) {
+        public JsonObject write(SeedsFromGrassAdditionModifier instance) {
             JsonObject json = makeConditions(instance.conditions);
             json.addProperty("addition", ForgeRegistries.ITEMS.getKey(instance.addition).toString());
             return json;

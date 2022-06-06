@@ -3,6 +3,7 @@ package lemon_juice.scalar_utils;
 import com.mojang.logging.LogUtils;
 import lemon_juice.scalar_utils.block.ModBlocks;
 import lemon_juice.scalar_utils.item.ModItems;
+import lemon_juice.scalar_utils.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -46,6 +47,8 @@ public class ScalarUtils
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLACK_LOTUS.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_BLACK_LOTUS.get(), RenderType.cutout());
 
+        //Turtle Trident
+        ModItemProperties.addCustomItemProperties();
     }
 
     private void setup(final FMLCommonSetupEvent event){
