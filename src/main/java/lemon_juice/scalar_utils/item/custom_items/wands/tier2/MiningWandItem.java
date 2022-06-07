@@ -43,6 +43,11 @@ public class MiningWandItem extends DiggerItem {
         pTooltipComponents.add(new TranslatableComponent("tooltip.scalar_utils.wand_of_mining.tooltip"));
     }
 
+    @Override
+    public boolean isRepairable(ItemStack stack) {
+        return false;
+    }
+
     public MiningWandItem(Tier tier, Properties builder, int radius) {
         super(5.0F, -3.0F, tier, DataTags.WITH_MINING_WAND, builder);
         this.radius = radius;
