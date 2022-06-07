@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "scalar_utils:block/lemon_quartz_block",
+    "top": "scalar_utils:block/lemon_quartz_block",
+    "side": "scalar_utils:block/lemon_quartz_block"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "_",
+    "_"
+  ],
+  "key": {
+    "_": {
+      "item": "scalar_utils:lemon_quartz_slab"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:chiseled_lemon_quartz_block",
+    "count": 1
+  }
+}

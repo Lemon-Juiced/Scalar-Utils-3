@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "scalar_utils:lemon_quartz_block"
+  },
+  "result": "scalar_utils:chiseled_lemon_quartz_block",
+  "count": 1
+}

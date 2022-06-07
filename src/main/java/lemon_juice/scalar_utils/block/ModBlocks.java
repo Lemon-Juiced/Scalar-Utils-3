@@ -44,10 +44,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> BLACK_LOTUS = registerBlock("black_lotus", () -> new FlowerBlock(MobEffects.GLOWING, 1, BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()), ModCreativeModeTabs.SC_UTILS_BLOCKS_TAB);
     public static final RegistryObject<Block> POTTED_BLACK_LOTUS = registerBlockWithoutBlockItem("potted_black_lotus", () -> new FlowerPotBlock(null, ModBlocks.BLACK_LOTUS, BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()));
 
-    //Lemon Quartz Block
+    //Lemon Quartz Blocks
+    public static final RegistryObject<Block> CHISELED_LEMON_QUARTZ_BLOCK = registerBlock("chiseled_lemon_quartz_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(0.8f).requiresCorrectToolForDrops()), ModCreativeModeTabs.SC_UTILS_BLOCKS_TAB);
     public static final RegistryObject<Block> LEMON_QUARTZ_BLOCK = registerBlock("lemon_quartz_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(0.8f).requiresCorrectToolForDrops()), ModCreativeModeTabs.SC_UTILS_BLOCKS_TAB);
     public static final RegistryObject<Block> LEMON_QUARTZ_BRICKS = registerBlock("lemon_quartz_bricks", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(0.8f).requiresCorrectToolForDrops()), ModCreativeModeTabs.SC_UTILS_BLOCKS_TAB);
     public static final RegistryObject<Block> LEMON_QUARTZ_PILLAR = registerBlock("lemon_quartz_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of(Material.STONE).strength(0.8f).requiresCorrectToolForDrops()), ModCreativeModeTabs.SC_UTILS_BLOCKS_TAB);
+    public static final RegistryObject<Block> LEMON_QUARTZ_SLAB = registerBlock("lemon_quartz_slab", () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE).strength(0.8f).requiresCorrectToolForDrops()), ModCreativeModeTabs.SC_UTILS_BLOCKS_TAB);
+    public static final RegistryObject<Block> LEMON_QUARTZ_STAIRS = registerBlock("lemon_quartz_stairs", () -> new StairBlock(() -> ModBlocks.LEMON_QUARTZ_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).strength(0.8f).requiresCorrectToolForDrops()), ModCreativeModeTabs.SC_UTILS_BLOCKS_TAB);
 
     //Overworld Ores
     public static final RegistryObject<Block> DEEPSLATE_MANA_CRYSTAL_ORE = registerBlock("deepslate_mana_crystal_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTabs.SC_UTILS_BLOCKS_TAB);

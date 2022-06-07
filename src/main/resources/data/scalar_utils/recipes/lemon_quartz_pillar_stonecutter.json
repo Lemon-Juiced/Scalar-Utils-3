@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "scalar_utils:lemon_quartz_block"
+  },
+  "result": "scalar_utils:lemon_quartz_pillar",
+  "count": 1
+}

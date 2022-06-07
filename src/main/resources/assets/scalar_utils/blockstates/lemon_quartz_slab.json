@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "scalar_utils:block/lemon_quartz_slab"
+    },
+    "type=double": {
+      "model": "scalar_utils:block/lemon_quartz_block"
+    },
+    "type=top": {
+      "model": "scalar_utils:block/lemon_quartz_slab_top"
+    }
+  }
+}

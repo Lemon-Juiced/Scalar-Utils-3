@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " ##",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:lemon_quartz__block"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:lemon_quartz_stairs",
+    "count": 4
+  }
+}
