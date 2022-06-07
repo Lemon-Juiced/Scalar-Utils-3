@@ -1,0 +1,16 @@
+{
+  "conditions": [
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "item": "scalar_utils:glass_cutter"
+      }
+    },
+    {
+      "condition": "minecraft:block_state_property",
+      "block": "minecraft:blue_ice"
+    }
+  ],
+  "addition": "minecraft:blue_ice",
+  "type": "scalar_utils:blue_ice_from_blue_ice"
+}

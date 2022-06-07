@@ -24,7 +24,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ScalarUtils.MOD_ID);
 
     //Chassis
-    public static final RegistryObject<Block> GILDED_IRON_CHASSIS = registerBlock("gilded_iron_chassis", () -> new GlassBlock(BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(1f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTabs.SC_UTILS_BLOCKS_TAB);
+    public static final RegistryObject<Block> GILDED_IRON_CHASSIS = registerBlock("gilded_iron_chassis", () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTabs.SC_UTILS_BLOCKS_TAB);
 
     //Compact Blocks
     public static final RegistryObject<Block> COOKED_MEAT_BLOCK = registerBlock("cooked_meat_block", () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTabs.SC_UTILS_BLOCKS_TAB);

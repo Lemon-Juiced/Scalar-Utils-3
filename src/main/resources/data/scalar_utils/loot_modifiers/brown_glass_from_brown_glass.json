@@ -1,0 +1,16 @@
+{
+  "conditions": [
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "item": "scalar_utils:glass_cutter"
+      }
+    },
+    {
+      "condition": "minecraft:block_state_property",
+      "block": "minecraft:brown_stained_glass"
+    }
+  ],
+  "addition": "minecraft:brown_stained_glass",
+  "type": "scalar_utils:brown_glass_from_brown_glass"
+}

@@ -1,0 +1,16 @@
+{
+  "conditions": [
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "item": "scalar_utils:glass_cutter"
+      }
+    },
+    {
+      "condition": "minecraft:block_state_property",
+      "block": "minecraft:yellow_stained_glass_pane"
+    }
+  ],
+  "addition": "minecraft:yellow_stained_glass_pane",
+  "type": "scalar_utils:yellow_glass_from_yellow_glass_pane"
+}
