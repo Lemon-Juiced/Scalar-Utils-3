@@ -15,6 +15,7 @@ import lemon_juice.scalar_utils.item.custom_items.wands.tier1.HarmingWandItem;
 import lemon_juice.scalar_utils.item.custom_items.wands.tier1.HealingWandItem;
 import lemon_juice.scalar_utils.item.custom_items.wands.tier1.PoisonWandItem;
 import lemon_juice.scalar_utils.item.custom_items.wands.tier2.LightningWandItem;
+import lemon_juice.scalar_utils.item.custom_items.wands.tier2.MiningWandItem;
 import lemon_juice.scalar_utils.item.custom_items.wands.tier2.WitherWandItem;
 import lemon_juice.scalar_utils.item.custom_materials.ModArmorMaterials;
 import lemon_juice.scalar_utils.item.custom_materials.ModTiers;
@@ -177,7 +178,7 @@ public class ModItems {
     public static final RegistryObject<Item> WAND_OF_HARMING = ITEMS.register("wand_of_harming", () -> new HarmingWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> WAND_OF_HEALING = ITEMS.register("wand_of_healing", () -> new HealingWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> WAND_OF_LIGHTNING = ITEMS.register("wand_of_lightning", () -> new LightningWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
-    public static final RegistryObject<Item> WAND_OF_MINING = ITEMS.register("wand_of_mining", () -> new LightningWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> WAND_OF_MINING = ITEMS.register("wand_of_mining", () -> new MiningWandItem(Tiers.NETHERITE, new Item.Properties().stacksTo(1).durability(10239).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB), 1));
     public static final RegistryObject<Item> WAND_OF_POISON = ITEMS.register("wand_of_poison", () -> new PoisonWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> WAND_OF_WITHER = ITEMS.register("wand_of_wither", () -> new WitherWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
 
