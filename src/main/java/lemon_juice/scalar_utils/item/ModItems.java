@@ -17,6 +17,7 @@ import lemon_juice.scalar_utils.item.custom_items.wands.tier1.PoisonWandItem;
 import lemon_juice.scalar_utils.item.custom_items.wands.tier2.LightningWandItem;
 import lemon_juice.scalar_utils.item.custom_items.wands.tier2.MiningWandItem;
 import lemon_juice.scalar_utils.item.custom_items.wands.tier2.WitherWandItem;
+import lemon_juice.scalar_utils.item.custom_items.wands.tier3.StaffOfTheTunnelerItem;
 import lemon_juice.scalar_utils.item.custom_materials.ModArmorMaterials;
 import lemon_juice.scalar_utils.item.custom_materials.ModTiers;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -145,17 +146,21 @@ public class ModItems {
 
     //Voidstone
     public static final RegistryObject<Item> VOIDSTONE = ITEMS.register("voidstone", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> VOIDSTONE_ROD = ITEMS.register("voidstone_rod", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
 
+    /* Tools & Weapons */
     public static final RegistryObject<Item> VOIDSTONE_SWORD = ITEMS.register("voidstone_sword", () -> new SwordItem(ModTiers.VOIDSTONE, 3, -2.4f, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> VOIDSTONE_PICKAXE= ITEMS.register("voidstone_pickaxe", () -> new PickaxeItem(ModTiers.VOIDSTONE, 1, -2.8f, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> VOIDSTONE_AXE = ITEMS.register("voidstone_axe", () -> new AxeItem(ModTiers.VOIDSTONE, 5, -3f, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> VOIDSTONE_SHOVEL = ITEMS.register("voidstone_shovel", () -> new ShovelItem(ModTiers.VOIDSTONE, 1, -3f, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> VOIDSTONE_HOE = ITEMS.register("voidstone_hoe", () -> new HoeItem(ModTiers.VOIDSTONE, -5, 0f, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> VOIDSTONE_GREATSWORD = ITEMS.register("voidstone_greatsword", () -> new SwordItem(ModTiers.GREAT_VOIDSTONE, 3, -2.4f, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+
+    /* Armor */
     public static final RegistryObject<Item> VOIDSTONE_HELMET = ITEMS.register("voidstone_helmet", () -> new VoidstoneArmorItem(ModArmorMaterials.VOIDSTONE, EquipmentSlot.HEAD, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> VOIDSTONE_CHESTPLATE = ITEMS.register("voidstone_chestplate", () -> new VoidstoneArmorItem(ModArmorMaterials.VOIDSTONE, EquipmentSlot.CHEST, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> VOIDSTONE_LEGGINGS = ITEMS.register("voidstone_leggings", () -> new VoidstoneArmorItem(ModArmorMaterials.VOIDSTONE, EquipmentSlot.LEGS, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> VOIDSTONE_BOOTS = ITEMS.register("voidstone_boots", () -> new VoidstoneArmorItem(ModArmorMaterials.VOIDSTONE, EquipmentSlot.FEET, new Item.Properties().fireResistant().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
-    public static final RegistryObject<Item> VOIDSTONE_GREATSWORD = ITEMS.register("voidstone_greatsword", () -> new SwordItem(ModTiers.GREAT_VOIDSTONE, 3, -2.4f, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
 
     //Wands
     /* Base Wands */
@@ -175,14 +180,19 @@ public class ModItems {
     public static final RegistryObject<Item> POISON_FOCUS = ITEMS.register("poison_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> WITHER_FOCUS = ITEMS.register("wither_focus", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
 
-    /* Wands With Effects */
+    /* Tier 1 Wands */
     public static final RegistryObject<Item> WAND_OF_FIRE = ITEMS.register("wand_of_fire", () -> new FireWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> WAND_OF_HARMING = ITEMS.register("wand_of_harming", () -> new HarmingWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
     public static final RegistryObject<Item> WAND_OF_HEALING = ITEMS.register("wand_of_healing", () -> new HealingWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
-    public static final RegistryObject<Item> WAND_OF_LIGHTNING = ITEMS.register("wand_of_lightning", () -> new LightningWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
-    public static final RegistryObject<Item> WAND_OF_MINING = ITEMS.register("wand_of_mining", () -> new MiningWandItem(Tiers.NETHERITE, new Item.Properties().stacksTo(1).durability(10239).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB), 1));
     public static final RegistryObject<Item> WAND_OF_POISON = ITEMS.register("wand_of_poison", () -> new PoisonWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+
+    /* Tier 2 Wands */
+    public static final RegistryObject<Item> WAND_OF_LIGHTNING = ITEMS.register("wand_of_lightning", () -> new LightningWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> WAND_OF_MINING = ITEMS.register("wand_of_mining", () -> new MiningWandItem(Tiers.NETHERITE, new Item.Properties().stacksTo(1).durability(18431).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB), 1));
     public static final RegistryObject<Item> WAND_OF_WITHER = ITEMS.register("wand_of_wither", () -> new WitherWandItem(new Item.Properties().stacksTo(1).durability(255).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+
+    /* Tier 3 Wands */
+    public static final RegistryObject<Item> STAFF_OF_THE_TUNNELER = ITEMS.register("staff_of_the_tunneler", () -> new StaffOfTheTunnelerItem(ModTiers.VOIDSTONE, new Item.Properties().stacksTo(1).durability(51199).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB), 2));
 
     //Weapons
     public static final RegistryObject<Item> TURTLE_TRIDENT = ITEMS.register("turtle_trident", () -> new TurtleTridentItem(new Item.Properties().stacksTo(1).durability(63).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));

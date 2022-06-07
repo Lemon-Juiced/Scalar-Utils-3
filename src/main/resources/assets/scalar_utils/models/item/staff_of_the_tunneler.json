@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "scalar_utils:item/staff_of_the_tunneler"
+  }
+}
