@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " V ",
+    "/  "
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:wand_of_mining"
+    },
+    "V": {
+      "item": "scalar_utils:voidstone_pickaxe"
+    },
+    "/": {
+      "item": "scalar_utils:voidstone_rod"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:staff_of_the_tunneler",
+    "count": 1
+  }
+}
