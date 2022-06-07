@@ -30,6 +30,22 @@ public class FireWandItem extends Item {
     }
 
     @Override
+    public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
+        if(entity instanceof LivingEntity){
+            entity.setSecondsOnFire(5);
+            entity.setSharedFlagOnFire(true);
+        }
+
+        if (player != null) {
+            player.getItemInHand(player.getUsedItemHand()).hurtAndBreak(1, player, (p_41303_) -> {
+                p_41303_.broadcastBreakEvent(player.getUsedItemHand());
+            });
+        }
+
+        return super.onLeftClickEntity(stack, player, entity);
+    }
+
+    @Override
     public InteractionResult useOn(UseOnContext pContext) {
         Player player = pContext.getPlayer();
         Level level = pContext.getLevel();
