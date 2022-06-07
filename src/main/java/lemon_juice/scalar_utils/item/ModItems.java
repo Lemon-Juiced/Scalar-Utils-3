@@ -34,6 +34,7 @@ public class ModItems {
     public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry", () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY).tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
 
     //Crops (Not Foods)
+    public static final RegistryObject<Item> ENDER_SPORE = ITEMS.register("ender_spore", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> FLAX = ITEMS.register("flax", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
 
     //Custom Crafting Tools
@@ -126,6 +127,7 @@ public class ModItems {
     public static final RegistryObject<Item> SHULKER_SHELLMET = ITEMS.register("shulker_shellmet", () -> new ShulkerArmorItem(ModArmorMaterials.SHULKER, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
 
     //Seeds
+    public static final RegistryObject<Item> ENDER_SPORE_SEEDS = ITEMS.register("ender_spore_seeds", () -> new ItemNameBlockItem(ModBlocks.ENDER_SPORE_PLANT.get(), new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> FLAX_SEEDS = ITEMS.register("flax_seeds", () -> new ItemNameBlockItem(ModBlocks.FLAX_PLANT.get(), new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> RICE_SEEDS = ITEMS.register("rice_seeds", () -> new ItemNameBlockItem(ModBlocks.RICE_PLANT.get(), new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds", () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_PLANT.get(), new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));

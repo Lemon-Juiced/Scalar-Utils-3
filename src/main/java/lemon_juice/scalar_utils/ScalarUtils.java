@@ -36,6 +36,7 @@ public class ScalarUtils
 
     private void clientSetup(final FMLClientSetupEvent event){
         //Crops
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ENDER_SPORE_PLANT.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.FLAX_PLANT.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RICE_PLANT.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.STRAWBERRY_PLANT.get(), RenderType.cutout());

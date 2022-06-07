@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "age=0": { "model": "scalar_utils:block/ender_spore_stage0" },
+    "age=1": { "model": "scalar_utils:block/ender_spore_stage1" },
+    "age=2": { "model": "scalar_utils:block/ender_spore_stage2" },
+    "age=3": { "model": "scalar_utils:block/ender_spore_stage3" },
+    "age=4": { "model": "scalar_utils:block/ender_spore_stage4" },
+    "age=5": { "model": "scalar_utils:block/ender_spore_stage5" },
+    "age=6": { "model": "scalar_utils:block/ender_spore_stage6" },
+    "age=7": { "model": "scalar_utils:block/ender_spore_stage7" }
+  }
+}

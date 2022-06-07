@@ -36,11 +36,11 @@
     "scalar_utils:yellow_glass_from_yellow_glass",
     "scalar_utils:yellow_glass_pane_from_yellow_glass_pane",
 
-
     "scalar_utils:blue_ice_from_blue_ice",
     "scalar_utils:ice_from_ice",
     "scalar_utils:packed_ice_from_packed_ice",
 
+    "scalar_utils:ender_spore_seeds_from_grass",
     "scalar_utils:flax_seeds_from_grass",
     "scalar_utils:rice_seeds_from_grass",
     "scalar_utils:strawberry_seeds_from_grass"

@@ -1,6 +1,7 @@
 package lemon_juice.scalar_utils.block;
 
 import lemon_juice.scalar_utils.ScalarUtils;
+import lemon_juice.scalar_utils.block.custom.crops.EnderSporePlantBlock;
 import lemon_juice.scalar_utils.block.custom.crops.FlaxPlantBlock;
 import lemon_juice.scalar_utils.block.custom.crops.RicePlantBlock;
 import lemon_juice.scalar_utils.block.custom.crops.StrawberryPlantBlock;
@@ -32,6 +33,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> RAW_MEAT_BLOCK = registerBlock("raw_meat_block", () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(1f).requiresCorrectToolForDrops()), ModCreativeModeTabs.SC_UTILS_BLOCKS_TAB);
 
     //Crops
+    public static final RegistryObject<Block> ENDER_SPORE_PLANT = registerBlockWithoutBlockItem("ender_spore_plant", () -> new EnderSporePlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
     public static final RegistryObject<Block> FLAX_PLANT = registerBlockWithoutBlockItem("flax_plant", () -> new FlaxPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
     public static final RegistryObject<Block> RICE_PLANT = registerBlockWithoutBlockItem("rice_plant", () -> new RicePlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
     public static final RegistryObject<Block> STRAWBERRY_PLANT = registerBlockWithoutBlockItem("strawberry_plant", () -> new StrawberryPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
