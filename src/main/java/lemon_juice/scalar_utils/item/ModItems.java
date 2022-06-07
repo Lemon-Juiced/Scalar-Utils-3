@@ -130,7 +130,7 @@ public class ModItems {
     public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds", () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_PLANT.get(), new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
 
     //Tools
-    public static final RegistryObject<Item> GLASS_CUTTER = ITEMS.register("glass_cutter", () -> new GlassCutterItem(Tiers.IRON, 1, 1f, new Item.Properties().durability(1-23).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
+    public static final RegistryObject<Item> GLASS_CUTTER = ITEMS.register("glass_cutter", () -> new GlassCutterItem(Tiers.IRON, 1, 1f, new Item.Properties().durability(1023).tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
 
     //Vanilla Greatswords
     public static final RegistryObject<Item> WOODEN_GREATSWORD = ITEMS.register("wooden_greatsword", () -> new SwordItem(ModTiers.GREAT_WOOD, 3, -2.4f, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));

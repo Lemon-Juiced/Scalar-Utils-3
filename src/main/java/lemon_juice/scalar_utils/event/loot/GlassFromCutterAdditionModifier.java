@@ -14,33 +14,31 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class SeedsFromGrassAdditionModifier extends LootModifier {
+public class GlassFromCutterAdditionModifier extends LootModifier {
     private final Item addition;
 
-    protected SeedsFromGrassAdditionModifier(LootItemCondition[] conditionsIn, Item addition) {
-        super(conditionsIn);
+    protected GlassFromCutterAdditionModifier(LootItemCondition[] conditions, Item addition) {
+        super(conditions);
         this.addition = addition;
     }
 
     @NotNull
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() < 0.05f){ //5% chance
-            generatedLoot.add(new ItemStack(addition, 1));
-        }
+        generatedLoot.add(new ItemStack(addition, 1));
         return generatedLoot;
     }
 
-    public static class Serializer extends GlobalLootModifierSerializer<SeedsFromGrassAdditionModifier> {
+    public static class Serializer extends GlobalLootModifierSerializer<GlassFromCutterAdditionModifier> {
 
         @Override
-        public SeedsFromGrassAdditionModifier read(ResourceLocation location, JsonObject object, LootItemCondition[] ailootcondition) {
+        public GlassFromCutterAdditionModifier read(ResourceLocation location, JsonObject object, LootItemCondition[] conditions) {
             Item addition = ForgeRegistries.ITEMS.getValue(new ResourceLocation(GsonHelper.getAsString(object, "addition")));
-            return new SeedsFromGrassAdditionModifier(ailootcondition, addition);
+            return new GlassFromCutterAdditionModifier(conditions, addition);
         }
 
         @Override
-        public JsonObject write(SeedsFromGrassAdditionModifier instance) {
+        public JsonObject write(GlassFromCutterAdditionModifier instance) {
             JsonObject json = makeConditions(instance.conditions);
             json.addProperty("addition", ForgeRegistries.ITEMS.getKey(instance.addition).toString());
             return json;

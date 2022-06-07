@@ -1,0 +1,16 @@
+{
+  "conditions": [
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "item": "scalar_utils:glass_cutter"
+      }
+    },
+    {
+      "condition": "minecraft:block_state_property",
+      "block": "minecraft:glass"
+    }
+  ],
+  "addition": "minecraft:glass",
+  "type": "scalar_utils:glass_from_glass"
+}
