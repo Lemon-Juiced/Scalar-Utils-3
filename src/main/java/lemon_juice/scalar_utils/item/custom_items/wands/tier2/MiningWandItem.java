@@ -1,8 +1,7 @@
 package lemon_juice.scalar_utils.item.custom_items.wands.tier2;
 
-import com.google.common.collect.ImmutableSet;
-import lemon_juice.scalar_utils.item.custom_items.wands.tier2.util.DataTags;
-import lemon_juice.scalar_utils.item.custom_items.wands.tier2.util.UtilShape;
+import lemon_juice.scalar_utils.item.custom_items.wands.util.DataTags;
+import lemon_juice.scalar_utils.item.custom_items.wands.util.UtilShape;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -10,8 +9,6 @@ import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.network.protocol.game.ClientboundBlockUpdatePacket;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.ClipContext;
@@ -19,16 +16,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.event.ForgeEventFactory;
 import org.jetbrains.annotations.Nullable;
 
-import javax.annotation.concurrent.Immutable;
 import java.util.List;
-import java.util.Set;
 
 public class MiningWandItem extends DiggerItem {
     final int radius; //Radius 1 is 3x3 (1 Up, 1 Down, 1 Left, 1 Right, and Corners); 2 is 5x5; 3 is 7x7, etc.

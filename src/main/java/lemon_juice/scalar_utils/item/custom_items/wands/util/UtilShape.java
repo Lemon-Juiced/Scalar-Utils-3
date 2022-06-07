@@ -1,4 +1,4 @@
-package lemon_juice.scalar_utils.item.custom_items.wands.tier2.util;
+package lemon_juice.scalar_utils.item.custom_items.wands.util;
 
 import net.minecraft.commands.arguments.coordinates.BlockPosArgument;
 import net.minecraft.core.BlockPos;
