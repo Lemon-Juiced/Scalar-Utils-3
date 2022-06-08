@@ -31,6 +31,6 @@ public class FreshMilkItem extends MilkBucketItem {
             pStack.shrink(1);
         }
 
-        return pStack.isEmpty() ? new ItemStack(Items.AIR) : pStack;
+        return pStack.isEmpty() ? ItemStack.EMPTY : pStack;
     }
 }

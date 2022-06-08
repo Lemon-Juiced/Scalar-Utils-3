@@ -27,6 +27,7 @@ public class ScalarUtils
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        //ModBlockEntities.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
@@ -47,6 +48,10 @@ public class ScalarUtils
 
         //Turtle Trident
         ModItemProperties.addCustomItemProperties();
+
+        //Menus
+        //MenuScreens.register(ModMenuTypes.MANA_CONDENSER_MENU.get(), ManaCondenserScreen::new);
+
     }
 
     private void setup(final FMLCommonSetupEvent event){
