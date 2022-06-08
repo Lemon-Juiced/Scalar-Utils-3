@@ -4,7 +4,10 @@ import lemon_juice.scalar_utils.ScalarUtils;
 import lemon_juice.scalar_utils.event.loot.EnderSporeSeedsFromGrassAdditionModifier;
 import lemon_juice.scalar_utils.event.loot.GlassFromCutterAdditionModifier;
 import lemon_juice.scalar_utils.event.loot.SeedsFromGrassAdditionModifier;
+import lemon_juice.scalar_utils.recipe.ManaCondenserRecipe;
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -27,5 +30,10 @@ public class ModEventBusEvents {
                 new SeedsFromGrassAdditionModifier.Serializer().setRegistryName(new ResourceLocation(ScalarUtils.MOD_ID, "rice_seeds_from_grass")),
                 new SeedsFromGrassAdditionModifier.Serializer().setRegistryName(new ResourceLocation(ScalarUtils.MOD_ID, "strawberry_seeds_from_grass"))
         );
+    }
+
+    @SubscribeEvent
+    public static void registerRecipeTypes(final RegistryEvent.Register<RecipeSerializer<?>> event){
+        Registry.register(Registry.RECIPE_TYPE, ManaCondenserRecipe.Type.ID, ManaCondenserRecipe.Type.INSTANCE);
     }
 }

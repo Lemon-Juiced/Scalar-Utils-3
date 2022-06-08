@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import lemon_juice.scalar_utils.block.ModBlocks;
 import lemon_juice.scalar_utils.block.entity.ModBlockEntities;
 import lemon_juice.scalar_utils.item.ModItems;
+import lemon_juice.scalar_utils.recipe.ModRecipes;
 import lemon_juice.scalar_utils.screen.ManaCondenserScreen;
 import lemon_juice.scalar_utils.screen.ModMenuTypes;
 import lemon_juice.scalar_utils.util.ModItemProperties;
@@ -34,6 +35,8 @@ public class ScalarUtils
 
         ModBlockEntities.register(eventBus);
         ModMenuTypes.register(eventBus);
+
+        ModRecipes.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);

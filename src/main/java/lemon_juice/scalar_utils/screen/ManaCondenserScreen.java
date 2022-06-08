@@ -25,6 +25,10 @@ public class ManaCondenserScreen extends AbstractContainerScreen<ManaCondenserMe
         int y = (height - imageHeight) / 2;
 
         this.blit(pPoseStack, x, y, 0, 0, imageWidth, imageHeight);
+
+        if(menu.isCrafting()) {
+            blit(pPoseStack, x + 75, y + 35, 176, 14, menu.getScaledProgress(), 22);
+        }
     }
 
     @Override

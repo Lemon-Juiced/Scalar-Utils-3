@@ -1,0 +1,11 @@
+{
+  "type": "scalar_utils:mana_condensing",
+  "ingredients": [
+    {
+      "item": "scalar_utils:mana_crystal"
+    }
+  ],
+  "output": {
+    "item": "scalar_utils:mana_orb"
+  }
+}

@@ -6,9 +6,7 @@ import lemon_juice.scalar_utils.screen.slot.ModResultSlot;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.ContainerLevelAccess;
-import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -18,16 +16,18 @@ import net.minecraftforge.items.SlotItemHandler;
 public class ManaCondenserMenu extends AbstractContainerMenu {
     private final ManaCondenserBlockEntity blockEntity;
     private final Level level;
+    private final ContainerData data;
 
     public ManaCondenserMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
-        this(pContainerId, inv, inv.player.level.getBlockEntity(extraData.readBlockPos()));
+        this(pContainerId, inv, inv.player.level.getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
     }
 
-    public ManaCondenserMenu(int pContainerId, Inventory inv, BlockEntity entity) {
+    public ManaCondenserMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
         super(ModMenuTypes.MANA_CONDENSER_MENU.get(), pContainerId);
         checkContainerSize(inv, 2);
         blockEntity = ((ManaCondenserBlockEntity) entity);
         this.level = inv.player.level;
+        this.data = data;
 
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
@@ -36,6 +36,20 @@ public class ManaCondenserMenu extends AbstractContainerMenu {
             this.addSlot(new SlotItemHandler(handler, 0, 52, 35));
             this.addSlot(new ModResultSlot(handler, 1, 106, 35));
         });
+
+        addDataSlots(data);
+    }
+
+    public boolean isCrafting(){
+        return data.get(0) > 0;
+    }
+
+    public int getScaledProgress() {
+        int progress = this.data.get(0);
+        int maxProgress = this.data.get(1); //Max Progress
+        int progressArrowSize = 22; //This is the width in pixels of the arrow
+
+        return maxProgress != 0 && progress != 0 ? progress + progressArrowSize / maxProgress : 0;
     }
 
     //0 - 8 = Hotbar Slots (which will map to the InventoryPlayer slot numbers 0 - 8)
