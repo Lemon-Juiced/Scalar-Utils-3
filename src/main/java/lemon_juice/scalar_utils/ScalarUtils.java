@@ -2,8 +2,12 @@ package lemon_juice.scalar_utils;
 
 import com.mojang.logging.LogUtils;
 import lemon_juice.scalar_utils.block.ModBlocks;
+import lemon_juice.scalar_utils.block.entity.ModBlockEntities;
 import lemon_juice.scalar_utils.item.ModItems;
+import lemon_juice.scalar_utils.screen.ManaCondenserScreen;
+import lemon_juice.scalar_utils.screen.ModMenuTypes;
 import lemon_juice.scalar_utils.util.ModItemProperties;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -27,7 +31,9 @@ public class ScalarUtils
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
-        //ModBlockEntities.register(eventBus);
+
+        ModBlockEntities.register(eventBus);
+        ModMenuTypes.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
@@ -50,7 +56,7 @@ public class ScalarUtils
         ModItemProperties.addCustomItemProperties();
 
         //Menus
-        //MenuScreens.register(ModMenuTypes.MANA_CONDENSER_MENU.get(), ManaCondenserScreen::new);
+        MenuScreens.register(ModMenuTypes.MANA_CONDENSER_MENU.get(), ManaCondenserScreen::new);
 
     }
 
