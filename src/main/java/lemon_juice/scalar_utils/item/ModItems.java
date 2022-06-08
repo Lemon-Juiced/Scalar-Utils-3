@@ -111,9 +111,13 @@ public class ModItems {
 
     //Items
     public static final RegistryObject<Item> CITRIC_COMPOUND = ITEMS.register("citric_compound", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> COPPER_CRYSTAL = ITEMS.register("copper_crystal", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> ENDER_PEARL_SHARD = ITEMS.register("ender_pearl_shard", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> FLEXIMESH = ITEMS.register("fleximesh", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> GOLD_CRYSTAL = ITEMS.register("gold_crystal", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+    public static final RegistryObject<Item> IRON_CRYSTAL = ITEMS.register("iron_crystal", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> MANA_CRYSTAL = ITEMS.register("mana_crystal", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> MANA_ORB = ITEMS.register("mana_orb", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> GOLDEN_FEATHER = ITEMS.register("golden_feather", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
@@ -121,6 +125,10 @@ public class ModItems {
     public static final RegistryObject<Item> RICE_SLIMEBALL = ITEMS.register("rice_slimeball", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> SYNTHETIC_EMERALD = ITEMS.register("synthetic_emerald", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
     public static final RegistryObject<Item> TURTLE_INGOT = ITEMS.register("turtle_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ITEMS_TAB)));
+
+
+
+
 
     //Misc. Armor
     public static final RegistryObject<Item> BOOTS_OF_STRIDING = ITEMS.register("boots_of_striding", () -> new StridingArmorItem(ModArmorMaterials.MANA_CRYSTAL, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTabs.SC_UTILS_ATW_TAB)));
