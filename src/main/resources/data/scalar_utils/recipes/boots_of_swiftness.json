@@ -1,20 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "#G#",
-    "###"
+    "#L#"
   ],
   "key": {
     "#": {
       "item": "scalar_utils:mana_crystal"
     },
-    "G": {
-      "item": "scalar_utils:gilded_iron_chassis"
+    "L": {
+      "item": "minecraft:leather_boots"
     }
   },
   "result": {
-    "item": "scalar_utils:mana_condenser",
+    "item": "scalar_utils:boots_of_swiftness",
     "count": 1
   }
 }

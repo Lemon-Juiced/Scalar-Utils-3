@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:gilded_iron"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:gilded_iron_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:voidstone"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:voidstone_rod",
+    "count": 1
+  }
+}

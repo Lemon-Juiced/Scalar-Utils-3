@@ -2,18 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "#M#",
-    "MWM",
+    "MLM",
     "#M#"
   ],
   "key": {
     "#": {
       "item": "scalar_utils:mana_crystal"
     },
-    "m": {
+    "M": {
       "item": "scalar_utils:mana_orb"
     },
-    "W": {
-      "item": "scalar_utils:lemon_quartz_block"
+    "L": {
+      "item": "minecraft:lightning_rod"
     }
   },
   "result": {

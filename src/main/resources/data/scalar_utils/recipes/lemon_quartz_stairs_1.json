@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "scalar_utils:lemon_quartz__block"
+      "item": "scalar_utils:lemon_quartz_block"
     }
   },
   "result": {
-    "item": "scalar_utils:lemon_quartz__stairs",
+    "item": "scalar_utils:lemon_quartz_stairs",
     "count": 4
   }
 }
