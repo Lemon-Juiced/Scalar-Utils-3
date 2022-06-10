@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#M#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "scalar_utils:mana_crystal"
+    },
+    "F": {
+      "item": "scalar_utils:gilded_iron_chassis"
+    }
+  },
+  "result": {
+    "item": "scalar_utils:mana_condenser",
+    "count": 1
+  }
+}

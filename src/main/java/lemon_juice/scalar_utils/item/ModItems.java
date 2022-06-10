@@ -20,6 +20,7 @@ import lemon_juice.scalar_utils.item.custom_items.wands.tier2.WitherWandItem;
 import lemon_juice.scalar_utils.item.custom_items.wands.tier3.StaffOfTheTunnelerItem;
 import lemon_juice.scalar_utils.item.custom_materials.ModArmorMaterials;
 import lemon_juice.scalar_utils.item.custom_materials.ModTiers;
+import lemon_juice.scalar_utils.util.ModCreativeModeTabs;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
