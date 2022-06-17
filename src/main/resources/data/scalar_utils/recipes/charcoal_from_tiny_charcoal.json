@@ -1,16 +1,33 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "###",
-    "###"
-  ],
-  "key": {
-    "#": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "scalar_utils:tiny_charcoal"
+    },
+    {
+      "item": "scalar_utils:tiny_charcoal"
+    },
+    {
+      "item": "scalar_utils:tiny_charcoal"
+    },
+    {
+      "item": "scalar_utils:tiny_charcoal"
+    },
+    {
+      "item": "scalar_utils:tiny_charcoal"
+    },
+    {
+      "item": "scalar_utils:tiny_charcoal"
+    },
+    {
+      "item": "scalar_utils:tiny_charcoal"
+    },
+    {
       "item": "scalar_utils:tiny_charcoal"
     }
-  },
+  ],
   "result": {
-    "item": "minecraft:charcoal"
+    "item": "minecraft:charcoal",
+    "count": 1
   }
 }

@@ -3,9 +3,31 @@
   "ingredients": [
     {
       "item": "scalar_utils:tiny_coal"
+    },
+    {
+      "item": "scalar_utils:tiny_coal"
+    },
+    {
+      "item": "scalar_utils:tiny_coal"
+    },
+    {
+      "item": "scalar_utils:tiny_coal"
+    },
+    {
+      "item": "scalar_utils:tiny_coal"
+    },
+    {
+      "item": "scalar_utils:tiny_coal"
+    },
+    {
+      "item": "scalar_utils:tiny_coal"
+    },
+    {
+      "item": "scalar_utils:tiny_coal"
     }
-  },
+  ],
   "result": {
-    "item": "minecraft:coal"
+    "item": "minecraft:coal",
+    "count": 1
   }
 }
