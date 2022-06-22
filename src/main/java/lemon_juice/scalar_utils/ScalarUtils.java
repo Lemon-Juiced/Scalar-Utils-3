@@ -8,6 +8,8 @@ import lemon_juice.scalar_utils.recipe.ModRecipes;
 import lemon_juice.scalar_utils.screen.ManaCondenserScreen;
 import lemon_juice.scalar_utils.screen.ModMenuTypes;
 import lemon_juice.scalar_utils.util.ModItemProperties;
+import lemon_juice.scalar_utils.world.biomemods.ModBiomeModifiers;
+import lemon_juice.scalar_utils.world.feature.ModPlacedFeatures;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -37,6 +39,9 @@ public class ScalarUtils
         ModMenuTypes.register(eventBus);
 
         ModRecipes.register(eventBus);
+
+        ModBiomeModifiers.register(eventBus);
+        ModPlacedFeatures.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);

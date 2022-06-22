@@ -1,6 +1,7 @@
 package lemon_juice.scalar_utils.event.loot;
 
 import com.google.gson.JsonObject;
+import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.world.item.Item;
@@ -24,7 +25,7 @@ public class EnderSporeSeedsFromGrassAdditionModifier extends LootModifier {
 
     @NotNull
     @Override
-    protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
+    protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
         if(context.getRandom().nextFloat() <= 0.001f){ //0.01% chance
             generatedLoot.add(new ItemStack(addition, 1));
         }

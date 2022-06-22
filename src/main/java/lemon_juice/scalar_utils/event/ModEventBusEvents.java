@@ -5,35 +5,33 @@ import lemon_juice.scalar_utils.event.loot.EnderSporeSeedsFromGrassAdditionModif
 import lemon_juice.scalar_utils.event.loot.GlassFromCutterAdditionModifier;
 import lemon_juice.scalar_utils.event.loot.SeedsFromGrassAdditionModifier;
 import lemon_juice.scalar_utils.recipe.ManaCondenserRecipe;
-import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.crafting.RecipeSerializer;
-import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import org.lwjgl.system.CallbackI;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegisterEvent;
 
 import javax.annotation.Nonnull;
 
 @Mod.EventBusSubscriber(modid = ScalarUtils.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModEventBusEvents {
     @SubscribeEvent
-    public static void registerModifierSerializers(@Nonnull final RegistryEvent.Register<GlobalLootModifierSerializer<?>> event) {
-        event.getRegistry().registerAll(
-                //Glass Cutter Util
-                new GlassFromCutterAdditionModifier.Serializer().setRegistryName(new ResourceLocation(ScalarUtils.MOD_ID, "glass_from_glass")),
+    public static void registerModifierSerializers(@Nonnull final RegisterEvent event) {
+        event.register(ForgeRegistries.Keys.LOOT_MODIFIER_SERIALIZERS, helper -> {
+            //Glass Cutter Util
+            helper.register(new ResourceLocation(ScalarUtils.MOD_ID, "glass_from_glass"), new GlassFromCutterAdditionModifier.Serializer());
 
-                //Seeds
-                new EnderSporeSeedsFromGrassAdditionModifier.Serializer().setRegistryName(new ResourceLocation(ScalarUtils.MOD_ID, "ender_spore_seeds_from_grass")),
-                new SeedsFromGrassAdditionModifier.Serializer().setRegistryName(new ResourceLocation(ScalarUtils.MOD_ID, "flax_seeds_from_grass")),
-                new SeedsFromGrassAdditionModifier.Serializer().setRegistryName(new ResourceLocation(ScalarUtils.MOD_ID, "rice_seeds_from_grass")),
-                new SeedsFromGrassAdditionModifier.Serializer().setRegistryName(new ResourceLocation(ScalarUtils.MOD_ID, "strawberry_seeds_from_grass"))
-        );
+            //Seeds From Grass
+            helper.register(new ResourceLocation(ScalarUtils.MOD_ID, "ender_spore_seeds_from_grass"), new EnderSporeSeedsFromGrassAdditionModifier.Serializer());
+            helper.register(new ResourceLocation(ScalarUtils.MOD_ID, "flax_seeds_from_grass"), new SeedsFromGrassAdditionModifier.Serializer());
+            helper.register(new ResourceLocation(ScalarUtils.MOD_ID, "rice_seeds_from_grass"), new SeedsFromGrassAdditionModifier.Serializer());
+            helper.register(new ResourceLocation(ScalarUtils.MOD_ID, "strawberry_seeds_from_grass"), new SeedsFromGrassAdditionModifier.Serializer());
+        });
+
+        event.register(ForgeRegistries.Keys.RECIPE_TYPES, helper -> {
+            helper.register(new ResourceLocation(ScalarUtils.MOD_ID, ManaCondenserRecipe.Type.ID), ManaCondenserRecipe.Type.INSTANCE);
+        });
+
     }
 
-    @SubscribeEvent
-    public static void registerRecipeTypes(final RegistryEvent.Register<RecipeSerializer<?>> event){
-        Registry.register(Registry.RECIPE_TYPE, ManaCondenserRecipe.Type.ID, ManaCondenserRecipe.Type.INSTANCE);
-    }
 }

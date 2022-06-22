@@ -1,0 +1,5 @@
+{
+  "type": "scalar_utils:ores",
+  "biomes": "#minecraft:is_overworld",
+  "feature": "scalar_utils:mana_crystal_ore_placed"
+}

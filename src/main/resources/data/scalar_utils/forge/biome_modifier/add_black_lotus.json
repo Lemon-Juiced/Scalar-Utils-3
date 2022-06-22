@@ -1,0 +1,5 @@
+{
+  "type": "scalar_utils:vegetal",
+  "biomes": "#forge:is_plains",
+  "feature": "scalar_utils:black_lotus_placed"
+}

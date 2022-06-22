@@ -1,7 +1,6 @@
 package lemon_juice.scalar_utils.item.custom_items.wands.tier2;
 
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LightningBolt;
@@ -28,7 +27,7 @@ public class LightningWandItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(new TranslatableComponent("tooltip.scalar_utils.wand_of_lightning.tooltip"));
+        pTooltipComponents.add(Component.literal("tooltip.scalar_utils.wand_of_lightning.tooltip"));
     }
 
     @Override

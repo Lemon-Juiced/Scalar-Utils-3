@@ -1,0 +1,5 @@
+{
+  "type": "scalar_utils:ores",
+  "biomes": "#minecraft:is_end",
+  "feature": "scalar_utils:voidstone_ore_placed"
+}

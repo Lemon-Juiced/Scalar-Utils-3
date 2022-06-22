@@ -5,7 +5,6 @@ import lemon_juice.scalar_utils.item.custom_items.wands.util.UtilShape;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.network.protocol.game.ClientboundBlockUpdatePacket;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -34,7 +33,7 @@ public class MiningWandItem extends DiggerItem {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(new TranslatableComponent("tooltip.scalar_utils.wand_of_mining.tooltip"));
+        pTooltipComponents.add(Component.literal("tooltip.scalar_utils.wand_of_mining.tooltip"));
     }
 
     @Override

@@ -1,16 +1,12 @@
 package lemon_juice.scalar_utils.item.custom_items.wands.tier1;
 
 import net.minecraft.advancements.CriteriaTriggers;
-import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -44,7 +40,7 @@ public class FireWandItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(new TranslatableComponent("tooltip.scalar_utils.wand_of_fire.tooltip"));
+        pTooltipComponents.add(Component.literal("tooltip.scalar_utils.wand_of_fire.tooltip"));
     }
 
     @Override

@@ -1,7 +1,6 @@
 package lemon_juice.scalar_utils.item.custom_items.wands.tier1;
 
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
@@ -32,7 +31,7 @@ public class HarmingWandItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(new TranslatableComponent("tooltip.scalar_utils.wand_of_harming.tooltip"));
+        pTooltipComponents.add(Component.literal("tooltip.scalar_utils.wand_of_harming.tooltip"));
     }
 
     @Override

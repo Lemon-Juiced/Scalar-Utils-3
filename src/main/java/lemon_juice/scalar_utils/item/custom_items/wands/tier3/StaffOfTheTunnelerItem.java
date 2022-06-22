@@ -3,7 +3,6 @@ package lemon_juice.scalar_utils.item.custom_items.wands.tier3;
 import lemon_juice.scalar_utils.item.ModItems;
 import lemon_juice.scalar_utils.item.custom_items.wands.tier2.MiningWandItem;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.TooltipFlag;
@@ -21,7 +20,7 @@ public class StaffOfTheTunnelerItem extends MiningWandItem {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(new TranslatableComponent("tooltip.scalar_utils.staff_of_the_tunneler.tooltip"));
+        pTooltipComponents.add(Component.literal("tooltip.scalar_utils.staff_of_the_tunneler.tooltip"));
     }
 
     @Override
